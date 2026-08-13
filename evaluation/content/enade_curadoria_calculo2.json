@@ -1,0 +1,196 @@
+{
+  "corpus": "Agente Acadêmico de Conteúdo - Cálculo II (IEM021, UFAM)",
+  "fonte_dados": "ENADE (INEP) - números, tópicos, tipo, gabarito e descrição temática apenas. Enunciados NÃO reproduzidos (Seção 6.4).",
+  "topicos_referencia": [
+    "1. Derivação de Vetores e Regra da Cadeia",
+    "2. Funções de Várias Variáveis",
+    "3. Funções Potenciais e Integrais de Linha",
+    "4. Derivadas de Ordem Superior",
+    "5. Máximos e Mínimos",
+    "6. Integrais Múltiplas e Mudança de Variáveis",
+    "7. Fórmula de Taylor e Séries",
+    "Base/Cálculo I"
+  ],
+  "questoes": [
+    {
+      "numero": "D4",
+      "prova": "ENADE 2021 - Matemática Licenciatura",
+      "topico": "Base/Cálculo I (limites e sequências)",
+      "tipo": "discursiva",
+      "gabarito": "Prova de equivalência de limites via subsequências pares/ímpares + contraexemplo",
+      "descricao": "Convergência de sequências e subsequências — definição ε-N",
+      "fonte_url": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_PV_licenciatura_matematica.pdf"
+    },
+    {
+      "numero": 9,
+      "prova": "ENADE 2021 - Matemática Licenciatura",
+      "topico": "Base/Cálculo I (funções exponenciais)",
+      "tipo": "multipla_escolha",
+      "gabarito": "E",
+      "descricao": "Crescimento exponencial e taxa de variação em modelo de contágio",
+      "fonte_url": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_PV_licenciatura_matematica.pdf"
+    },
+    {
+      "numero": 13,
+      "prova": "ENADE 2021 - Matemática Licenciatura",
+      "topico": "Base/Cálculo I (derivadas)",
+      "tipo": "multipla_escolha",
+      "gabarito": "B",
+      "descricao": "Teorema do Valor Médio — interpretação geométrica",
+      "fonte_url": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_PV_licenciatura_matematica.pdf"
+    },
+    {
+      "numero": 20,
+      "prova": "ENADE 2021 - Matemática Licenciatura",
+      "topico": "Base/Cálculo I (EDO, exponenciais)",
+      "tipo": "multipla_escolha",
+      "gabarito": "C",
+      "descricao": "EDO linear de 1ª ordem — modelo de capitalização bancária",
+      "fonte_url": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_PV_licenciatura_matematica.pdf"
+    },
+    {
+      "numero": 22,
+      "prova": "ENADE 2021 - Matemática Licenciatura",
+      "topico": "Base/Cálculo I (análise de funções)",
+      "tipo": "multipla_escolha",
+      "gabarito": "A",
+      "descricao": "Esboço de gráfico de função quadrática discreta",
+      "fonte_url": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_PV_licenciatura_matematica.pdf"
+    },
+    {
+      "numero": 23,
+      "prova": "ENADE 2021 - Matemática Licenciatura",
+      "topico": "Máximos e Mínimos",
+      "tipo": "multipla_escolha",
+      "gabarito": "A",
+      "descricao": "Otimização geométrica — soma mínima de distâncias em triângulo",
+      "fonte_url": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_PV_licenciatura_matematica.pdf"
+    },
+    {
+      "numero": 10,
+      "prova": "ENADE 2014 - Matemática Bacharelado",
+      "topico": "Base/Cálculo I (integração)",
+      "tipo": "multipla_escolha",
+      "gabarito": "C",
+      "descricao": "Integral definida aplicada a taxa de investimento acumulado",
+      "fonte_url": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf"
+    },
+    {
+      "numero": 12,
+      "prova": "ENADE 2014 - Matemática Bacharelado",
+      "topico": "Integrais Múltiplas e Mudança de Variáveis",
+      "tipo": "multipla_escolha",
+      "gabarito": "D",
+      "descricao": "Integral dupla em coordenadas polares — área de superfície",
+      "fonte_url": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf"
+    },
+    {
+      "numero": 14,
+      "prova": "ENADE 2014 - Matemática Bacharelado",
+      "topico": "Base/Cálculo I (equações diferenciais)",
+      "tipo": "multipla_escolha",
+      "gabarito": "E",
+      "descricao": "Trajetórias ortogonais via equações diferenciais",
+      "fonte_url": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf"
+    },
+    {
+      "numero": 15,
+      "prova": "ENADE 2014 - Matemática Bacharelado",
+      "topico": "Base/Cálculo I (equações diferenciais)",
+      "tipo": "multipla_escolha",
+      "gabarito": "B",
+      "descricao": "Equação diferencial a partir de área sob o gráfico",
+      "fonte_url": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf"
+    },
+    {
+      "numero": 16,
+      "prova": "ENADE 2014 - Matemática Bacharelado",
+      "topico": "Base/Cálculo I (derivadas)",
+      "tipo": "multipla_escolha",
+      "gabarito": "C",
+      "descricao": "Teorema do Valor Médio — estimativa de valor máximo",
+      "fonte_url": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf"
+    },
+    {
+      "numero": 17,
+      "prova": "ENADE 2014 - Matemática Bacharelado",
+      "topico": "Base/Cálculo I (sequências)",
+      "tipo": "multipla_escolha",
+      "gabarito": "B",
+      "descricao": "Limite de sequência definida recursivamente",
+      "fonte_url": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf"
+    },
+    {
+      "numero": 21,
+      "prova": "ENADE 2014 - Matemática Bacharelado",
+      "topico": "Funções de Várias Variáveis",
+      "tipo": "multipla_escolha",
+      "gabarito": "A",
+      "descricao": "Continuidade e limite de função de duas variáveis",
+      "fonte_url": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf"
+    },
+    {
+      "numero": 22,
+      "prova": "ENADE 2014 - Matemática Bacharelado",
+      "topico": "Máximos e Mínimos / Derivadas de Ordem Superior",
+      "tipo": "multipla_escolha",
+      "gabarito": "E",
+      "descricao": "Pontos de inflexão e extremos de função cúbica",
+      "fonte_url": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf"
+    },
+    {
+      "numero": 24,
+      "prova": "ENADE 2014 - Matemática Bacharelado",
+      "topico": "Fórmula de Taylor e Séries",
+      "tipo": "multipla_escolha",
+      "gabarito": "A",
+      "descricao": "Convergência e precisão de série de potências",
+      "fonte_url": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf"
+    },
+    {
+      "numero": 28,
+      "prova": "ENADE 2014 - Matemática Bacharelado",
+      "topico": "Funções Potenciais e Integrais de Linha",
+      "tipo": "multipla_escolha",
+      "gabarito": "E",
+      "descricao": "Teorema de Green — hipóteses e aplicação",
+      "fonte_url": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf"
+    },
+    {
+      "numero": 31,
+      "prova": "ENADE 2014 - Matemática Bacharelado",
+      "topico": "Fórmula de Taylor e Séries",
+      "tipo": "multipla_escolha",
+      "gabarito": "B",
+      "descricao": "Convergência de séries de funções e integração termo a termo",
+      "fonte_url": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf"
+    },
+    {
+      "numero": 32,
+      "prova": "ENADE 2014 - Matemática Bacharelado",
+      "topico": "Funções Potenciais e Integrais de Linha",
+      "tipo": "multipla_escolha",
+      "gabarito": "C",
+      "descricao": "Cálculo de integral de linha via Teorema de Green",
+      "fonte_url": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf"
+    },
+    {
+      "numero": 33,
+      "prova": "ENADE 2014 - Matemática Bacharelado",
+      "topico": "Derivação de Vetores / Funções de Várias Variáveis",
+      "tipo": "multipla_escolha",
+      "gabarito": "D",
+      "descricao": "Primeira forma fundamental de superfície parametrizada",
+      "fonte_url": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf"
+    },
+    {
+      "numero": 34,
+      "prova": "ENADE 2014 - Matemática Bacharelado",
+      "topico": "Base/Cálculo I (Teorema Fundamental do Cálculo)",
+      "tipo": "multipla_escolha",
+      "gabarito": "A",
+      "descricao": "Teorema Fundamental do Cálculo — funções definidas por integral",
+      "fonte_url": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf"
+    }
+  ]
+}

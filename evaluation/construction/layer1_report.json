@@ -1,0 +1,89 @@
+{
+  "gerado_em": "2026-07-05T15:17:05.311894+00:00",
+  "corpus_hash": "0de6afcabfce3f46c670dae07be95ecbcb9435376700601f2459842db48f2e09",
+  "n_min_docs_por_topico": 3,
+  "cobertura_ementa": {
+    "topicos_cobertos": 7,
+    "total_topicos": 7,
+    "percentual": 1.0,
+    "topicos_abaixo_n": []
+  },
+  "diversidade_fontes": [
+    {
+      "topic_id": "derivacao-de-vetores-e-regra-da-cadeia",
+      "dominios_distintos": 2
+    },
+    {
+      "topic_id": "funcoes-de-varias-variaveis",
+      "dominios_distintos": 4
+    },
+    {
+      "topic_id": "funcoes-potenciais-e-integrais-de-linha",
+      "dominios_distintos": 4
+    },
+    {
+      "topic_id": "derivadas-de-ordem-superior",
+      "dominios_distintos": 2
+    },
+    {
+      "topic_id": "maximos-e-minimos",
+      "dominios_distintos": 3
+    },
+    {
+      "topic_id": "integrais-multiplas-mudanca-de-variaveis-em-integrais",
+      "dominios_distintos": 4
+    },
+    {
+      "topic_id": "a-formula-de-taylor-e-series",
+      "dominios_distintos": 2
+    }
+  ],
+  "credibilidade": {
+    "media_geral": 0.9398,
+    "por_topico": [
+      {
+        "topic_id": "derivacao-de-vetores-e-regra-da-cadeia",
+        "avg_credibility": 0.9089
+      },
+      {
+        "topic_id": "funcoes-de-varias-variaveis",
+        "avg_credibility": 0.946
+      },
+      {
+        "topic_id": "funcoes-potenciais-e-integrais-de-linha",
+        "avg_credibility": 0.9488
+      },
+      {
+        "topic_id": "derivadas-de-ordem-superior",
+        "avg_credibility": 0.9074
+      },
+      {
+        "topic_id": "maximos-e-minimos",
+        "avg_credibility": 0.9545
+      },
+      {
+        "topic_id": "integrais-multiplas-mudanca-de-variaveis-em-integrais",
+        "avg_credibility": 0.9522
+      },
+      {
+        "topic_id": "a-formula-de-taylor-e-series",
+        "avg_credibility": 0.9606
+      }
+    ]
+  },
+  "volume_execucao": {
+    "tempo_total_segundos": 66.58,
+    "total_tentativas": 52,
+    "sucessos": 26,
+    "falhas": 26,
+    "chamadas_por_fonte": {
+      "wikipedia_pt": 20,
+      "wikipedia_en": 11,
+      "openstax": 9,
+      "mit_ocw": 4,
+      "arxiv": 4,
+      "khan_academy": 4
+    }
+  },
+  "total_chunks": 304
+}

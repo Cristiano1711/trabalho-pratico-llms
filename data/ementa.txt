@@ -1,0 +1,73 @@
+UNIVERSIDADE FEDERAL DO AMAZONAS
+INSTITUTO DE CIÊNCIAS EXATAS
+DEPARTAMENTO DE MATEMÁTICA
+
+Disciplina: Cálculo II
+Código: IEM021
+Área (ENADE): Matemática — Licenciatura
+
+Carga Horária Teórica: 90h | Prática: 0h | Total: 90h | Créditos: 6.6.0
+
+Pré-Requisitos: Cálculo I (IEM011)
+
+Ementa:
+Derivação de Vetores. Regra da Cadeia. Funções de Várias Variáveis.
+Derivada Diferencial. Derivada de Ordem Superior. Máximos e Mínimos.
+Funções Potenciais e Integrais de Linha. Integrais Múltiplas. Mudança de
+Variável na Integral. Teorema de Green. Fórmula de Taylor e Séries.
+
+Cursos para os quais é oferecida:
+Matemática OBR, Estatística OBR, Eng. de Pesca OBR, Geologia OBR,
+Eng. Civil OBR, Física OBR, Eng. Elétrica OBR, Química OBR,
+Processamento de Dados OBR
+
+Programa:
+
+I – Derivação de Vetores e Regra da Cadeia
+1.1. Curva Parametrizada. Vetor Velocidade
+1.2. Regra de Derivação
+1.3. Regra da Cadeia
+1.4. Curvatura e Raio de Curvatura de um Curva Parametrizada pelo Comprimento de Arco
+
+II – Funções de Várias Variáveis
+2.1. Gráficos e Curva de Nível
+2.2. Derivadas Parciais
+2.3. Diferenciabilidade e Gradiente
+2.4. A Regra da Cadeia e o Gradiente
+2.5. O Plano Tangente
+2.6. Derivada Direcional
+2.7. Lei da Conservação
+
+III – Funções Potenciais e Integrais de Linha
+3.1. Funções Potenciais
+3.2. Derivação sob a Integral
+3.3. Existência Local de Funções Potenciais
+3.4. Integrais de Linha
+3.5. Dependência do Caminho de Integração
+
+IV – Derivadas de Ordem Superior
+4.1. Derivadas Parciais Repetidas
+4.2. Operadores Diferenciais Parciais
+4.3. Fórmula de Taylor
+
+V – Máximos e Mínimos
+5.1. Pontos Críticos
+5.2. A Forma Quadrática
+5.3. Multiplicadores de Lagrange
+
+VI – Integrais Múltiplas – Mudança de Variáveis em Integrais
+6.1. Integrais Duplas
+6.2. Integrais Repetidas
+6.3. Integrais Triplas
+6.4. Fórmula de Mudança de Variáveis
+6.5. Teorema de Green
+
+VII – A Fórmula de Taylor e Séries
+7.1. A Fórmula de Taylor
+7.2. A Fórmula de Taylor das Funções Logarítmicas e Exponenciais
+7.3. Séries Convergentes
+7.4. O Teste da Razão e o Teste da Integral para Convergência de Séries
+
+Bibliografia:
+ÁVILA, G.S.S. Cálculo - Vol. 1: Livro Técnico e Científico.
+GUIDORIZZI, H. Um curso de cálculo diferencial e integral - Vol 1: Livro Técnico e Científico.

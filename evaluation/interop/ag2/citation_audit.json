@@ -1,0 +1,738 @@
+{
+  "generated_at": "2026-07-13T00:56:53.767835+00:00",
+  "scope": "Itens 1, 2, 3, 4, 6 e 8 exigem citação; itens 9 e 10 não devem inventar fonte.",
+  "summary": {
+    "items_total": 10,
+    "items_requiring_citations": 6,
+    "items_with_citations": 9,
+    "items_missing_required_citation": 0,
+    "items_with_unexpected_citation": 1,
+    "total_sources_available": 25,
+    "total_citations_used": 25,
+    "invalid_citation_count": 0,
+    "missing_chunk_id_count": 0,
+    "missing_source_url_count": 0,
+    "missing_support_excerpt_count": 0,
+    "low_support_overlap_count": 15,
+    "all_citations_valid": false
+  },
+  "items": {
+    "1": {
+      "item_id": 1,
+      "required_citation": true,
+      "no_citation_expected": false,
+      "available_source_count": 3,
+      "used_citation_count": 3,
+      "available_sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "used_citations": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "invalid_citations": [],
+      "urls_cited_in_answer": [
+        "https://pt.wikipedia.org/wiki/Campo_conservativo",
+        "https://pt.wikipedia.org/wiki/Gradiente",
+        "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz"
+      ],
+      "missing_required_citation": false,
+      "unexpected_citation": false,
+      "missing_chunk_id_count": 0,
+      "missing_source_url_count": 0,
+      "missing_support_excerpt_count": 0,
+      "low_support_overlap_count": 2,
+      "source_checks": [
+        {
+          "source_id": "S1",
+          "used": true,
+          "chunk_id": "d48152344b9f0277",
+          "source_url": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz",
+          "topics": [
+            "derivadas-de-ordem-superior"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "f\n          \n            y\n            x\n          \n        \n        (\n        0\n        ,\n        0\n        )\n        =\n        \n          lim\n          \n            ε\n            →\n            0\n          \n        \n        \n          \n            \n              \n                f\n                \n                  y",
+          "claim": "0",
+          "support_overlap": 0.0,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S2",
+          "used": true,
+          "chunk_id": "ee8b679d941c994f",
+          "source_url": "https://pt.wikipedia.org/wiki/Campo_conservativo",
+          "topics": [
+            "funcoes-potenciais-e-integrais-de-linha"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "F\n                →\n              \n            \n          \n          \n            c\n            o\n            n\n            s\n          \n        \n        ⋅\n        d\n        \n          \n            \n              r\n              →\n            \n          \n        \n        =\n        φ\n        (\n        x\n        ,",
+          "claim": "https://pt.wikipedia.org/wiki/Campo_conservativo - sustenta: F",
+          "support_overlap": 0.0,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S3",
+          "used": true,
+          "chunk_id": "a29b04bb82ea6af0",
+          "source_url": "https://pt.wikipedia.org/wiki/Gradiente",
+          "topics": [
+            "funcoes-de-varias-variaveis"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "== Definição ==\n\nO vetor gradiente ou simplesmente gradiente de um campo escalar \n  \n    \n      \n        \n          f\n          \n            (\n            \n              x\n              \n                1\n              \n            \n            ,\n            \n              x\n              \n                2",
+          "claim": "https://pt.wikipedia.org/wiki/Gradiente - sustenta: == Definição ==",
+          "support_overlap": 0.4,
+          "support_status": "basic_overlap_ok",
+          "missing_fields": []
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "S1 tem baixo overlap lexical entre afirmação e trecho de suporte",
+        "S2 tem baixo overlap lexical entre afirmação e trecho de suporte"
+      ],
+      "passed": true
+    },
+    "2": {
+      "item_id": 2,
+      "required_citation": true,
+      "no_citation_expected": false,
+      "available_source_count": 3,
+      "used_citation_count": 3,
+      "available_sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "used_citations": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "invalid_citations": [],
+      "urls_cited_in_answer": [
+        "https://pt.wikipedia.org/wiki/Campo_conservativo",
+        "https://pt.wikipedia.org/wiki/Gradiente",
+        "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz"
+      ],
+      "missing_required_citation": false,
+      "unexpected_citation": false,
+      "missing_chunk_id_count": 0,
+      "missing_source_url_count": 0,
+      "missing_support_excerpt_count": 0,
+      "low_support_overlap_count": 2,
+      "source_checks": [
+        {
+          "source_id": "S1",
+          "used": true,
+          "chunk_id": "d48152344b9f0277",
+          "source_url": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz",
+          "topics": [
+            "derivadas-de-ordem-superior"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "f\n          \n            y\n            x\n          \n        \n        (\n        0\n        ,\n        0\n        )\n        =\n        \n          lim\n          \n            ε\n            →\n            0\n          \n        \n        \n          \n            \n              \n                f\n                \n                  y",
+          "claim": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz - sustenta: f",
+          "support_overlap": 0.0,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S2",
+          "used": true,
+          "chunk_id": "ee8b679d941c994f",
+          "source_url": "https://pt.wikipedia.org/wiki/Campo_conservativo",
+          "topics": [
+            "funcoes-potenciais-e-integrais-de-linha"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "F\n                →\n              \n            \n          \n          \n            c\n            o\n            n\n            s\n          \n        \n        ⋅\n        d\n        \n          \n            \n              r\n              →\n            \n          \n        \n        =\n        φ\n        (\n        x\n        ,",
+          "claim": "https://pt.wikipedia.org/wiki/Campo_conservativo - sustenta: F",
+          "support_overlap": 0.0,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S3",
+          "used": true,
+          "chunk_id": "a29b04bb82ea6af0",
+          "source_url": "https://pt.wikipedia.org/wiki/Gradiente",
+          "topics": [
+            "funcoes-de-varias-variaveis"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "== Definição ==\n\nO vetor gradiente ou simplesmente gradiente de um campo escalar \n  \n    \n      \n        \n          f\n          \n            (\n            \n              x\n              \n                1\n              \n            \n            ,\n            \n              x\n              \n                2",
+          "claim": "https://pt.wikipedia.org/wiki/Gradiente - sustenta: == Definição ==",
+          "support_overlap": 0.4,
+          "support_status": "basic_overlap_ok",
+          "missing_fields": []
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "S1 tem baixo overlap lexical entre afirmação e trecho de suporte",
+        "S2 tem baixo overlap lexical entre afirmação e trecho de suporte"
+      ],
+      "passed": true
+    },
+    "3": {
+      "item_id": 3,
+      "required_citation": true,
+      "no_citation_expected": false,
+      "available_source_count": 2,
+      "used_citation_count": 2,
+      "available_sources": [
+        "S1",
+        "S2"
+      ],
+      "used_citations": [
+        "S1",
+        "S2"
+      ],
+      "invalid_citations": [],
+      "urls_cited_in_answer": [
+        "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz"
+      ],
+      "missing_required_citation": false,
+      "unexpected_citation": false,
+      "missing_chunk_id_count": 0,
+      "missing_source_url_count": 0,
+      "missing_support_excerpt_count": 0,
+      "low_support_overlap_count": 1,
+      "source_checks": [
+        {
+          "source_id": "S1",
+          "used": true,
+          "chunk_id": "7c5ca44572a2ccfb",
+          "source_url": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz",
+          "topics": [
+            "derivadas-de-ordem-superior"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "== Suficiência da diferenciabilidade dupla ==\nUma condição mais fraca do que a continuidade das segundas derivadas parciais (que é implicada por esta última), mas que é suficiente para garantir a simetria, é que todas as derivadas parciais sejam, elas mesmas, diferenciáveis.",
+          "claim": "O segundo tópico relevante é a comutatividade das derivadas parciais mistas, que pode ser garantida sob certas condições.",
+          "support_overlap": 0.1818,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S2",
+          "used": true,
+          "chunk_id": "b0f0e48b7c9f8df8",
+          "source_url": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz",
+          "topics": [
+            "derivadas-de-ordem-superior"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "Este relato é um método clássico direto encontrado em muitos livros didáticos, por exemplo em Burkill, Apostol e Rudin.",
+          "claim": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz - sustenta: Este relato é um método clássico direto encontrado em muitos livros didáticos, por exemplo em Burkill, Apostol e Rudin.",
+          "support_overlap": 1.0,
+          "support_status": "basic_overlap_ok",
+          "missing_fields": []
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "S1 tem baixo overlap lexical entre afirmação e trecho de suporte"
+      ],
+      "passed": true
+    },
+    "4": {
+      "item_id": 4,
+      "required_citation": true,
+      "no_citation_expected": false,
+      "available_source_count": 3,
+      "used_citation_count": 3,
+      "available_sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "used_citations": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "invalid_citations": [],
+      "urls_cited_in_answer": [
+        "https://pt.wikipedia.org/wiki/C%C3%A1lculo_diferencial_e_integral",
+        "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz"
+      ],
+      "missing_required_citation": false,
+      "unexpected_citation": false,
+      "missing_chunk_id_count": 0,
+      "missing_source_url_count": 0,
+      "missing_support_excerpt_count": 0,
+      "low_support_overlap_count": 2,
+      "source_checks": [
+        {
+          "source_id": "S1",
+          "used": true,
+          "chunk_id": "d48152344b9f0277",
+          "source_url": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz",
+          "topics": [
+            "derivadas-de-ordem-superior"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "f\n          \n            y\n            x\n          \n        \n        (\n        0\n        ,\n        0\n        )\n        =\n        \n          lim\n          \n            ε\n            →\n            0\n          \n        \n        \n          \n            \n              \n                f\n                \n                  y",
+          "claim": "A base permite comparar derivadas de ordem superior e derivadas de ordem superior pelo que cada fonte afirma, mas não permite concluir uma hierarquia geral entre eles. [S2]",
+          "support_overlap": 0.0,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S2",
+          "used": true,
+          "chunk_id": "b0f0e48b7c9f8df8",
+          "source_url": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz",
+          "topics": [
+            "derivadas-de-ordem-superior"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "Este relato é um método clássico direto encontrado em muitos livros didáticos, por exemplo em Burkill, Apostol e Rudin.",
+          "claim": "A base permite comparar derivadas de ordem superior e derivadas de ordem superior pelo que cada fonte afirma, mas não permite concluir uma hierarquia geral entre eles. [S1]",
+          "support_overlap": 0.0,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S3",
+          "used": true,
+          "chunk_id": "8dae5edc5353d57e",
+          "source_url": "https://pt.wikipedia.org/wiki/C%C3%A1lculo_diferencial_e_integral",
+          "topics": [
+            "derivacao-de-vetores-e-regra-da-cadeia"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "=== Cálculo básicoMedeiros, Valeria Zuma (2005).",
+          "claim": "https://pt.wikipedia.org/wiki/C%C3%A1lculo_diferencial_e_integral - sustenta: === Cálculo básicoMedeiros, Valeria Zuma (2005).",
+          "support_overlap": 1.0,
+          "support_status": "basic_overlap_ok",
+          "missing_fields": []
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "S1 tem baixo overlap lexical entre afirmação e trecho de suporte",
+        "S2 tem baixo overlap lexical entre afirmação e trecho de suporte"
+      ],
+      "passed": true
+    },
+    "5": {
+      "item_id": 5,
+      "required_citation": false,
+      "no_citation_expected": false,
+      "available_source_count": 3,
+      "used_citation_count": 3,
+      "available_sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "used_citations": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "invalid_citations": [],
+      "urls_cited_in_answer": [
+        "https://pt.wikipedia.org/wiki/C%C3%A1lculo_diferencial_e_integral",
+        "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz"
+      ],
+      "missing_required_citation": false,
+      "unexpected_citation": false,
+      "missing_chunk_id_count": 0,
+      "missing_source_url_count": 0,
+      "missing_support_excerpt_count": 0,
+      "low_support_overlap_count": 2,
+      "source_checks": [
+        {
+          "source_id": "S1",
+          "used": true,
+          "chunk_id": "b0f0e48b7c9f8df8",
+          "source_url": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz",
+          "topics": [
+            "derivadas-de-ordem-superior"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "Este relato é um método clássico direto encontrado em muitos livros didáticos, por exemplo em Burkill, Apostol e Rudin.",
+          "claim": "Não é possível afirmar que o primeiro tópico é sempre mais importante que o segundo sem evidência direta comparativa na base de estudo.",
+          "support_overlap": 0.0,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S2",
+          "used": true,
+          "chunk_id": "d48152344b9f0277",
+          "source_url": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz",
+          "topics": [
+            "derivadas-de-ordem-superior"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "f\n          \n            y\n            x\n          \n        \n        (\n        0\n        ,\n        0\n        )\n        =\n        \n          lim\n          \n            ε\n            →\n            0\n          \n        \n        \n          \n            \n              \n                f\n                \n                  y",
+          "claim": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz - sustenta: f",
+          "support_overlap": 0.0,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S3",
+          "used": true,
+          "chunk_id": "8dae5edc5353d57e",
+          "source_url": "https://pt.wikipedia.org/wiki/C%C3%A1lculo_diferencial_e_integral",
+          "topics": [
+            "derivacao-de-vetores-e-regra-da-cadeia"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "=== Cálculo básicoMedeiros, Valeria Zuma (2005).",
+          "claim": "https://pt.wikipedia.org/wiki/C%C3%A1lculo_diferencial_e_integral - sustenta: === Cálculo básicoMedeiros, Valeria Zuma (2005).",
+          "support_overlap": 1.0,
+          "support_status": "basic_overlap_ok",
+          "missing_fields": []
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "S1 tem baixo overlap lexical entre afirmação e trecho de suporte",
+        "S2 tem baixo overlap lexical entre afirmação e trecho de suporte"
+      ],
+      "passed": true
+    },
+    "6": {
+      "item_id": 6,
+      "required_citation": true,
+      "no_citation_expected": false,
+      "available_source_count": 3,
+      "used_citation_count": 3,
+      "available_sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "used_citations": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "invalid_citations": [],
+      "urls_cited_in_answer": [
+        "https://pt.wikipedia.org/wiki/Campo_conservativo",
+        "https://pt.wikipedia.org/wiki/Gradiente"
+      ],
+      "missing_required_citation": false,
+      "unexpected_citation": false,
+      "missing_chunk_id_count": 0,
+      "missing_source_url_count": 0,
+      "missing_support_excerpt_count": 0,
+      "low_support_overlap_count": 2,
+      "source_checks": [
+        {
+          "source_id": "S1",
+          "used": true,
+          "chunk_id": "a29b04bb82ea6af0",
+          "source_url": "https://pt.wikipedia.org/wiki/Gradiente",
+          "topics": [
+            "funcoes-de-varias-variaveis"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "== Definição ==\n\nO vetor gradiente ou simplesmente gradiente de um campo escalar \n  \n    \n      \n        \n          f\n          \n            (\n            \n              x\n              \n                1\n              \n            \n            ,\n            \n              x\n              \n                2",
+          "claim": "1",
+          "support_overlap": 0.0,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S2",
+          "used": true,
+          "chunk_id": "c6ac08af46d1212d",
+          "source_url": "https://pt.wikipedia.org/wiki/Gradiente",
+          "topics": [
+            "funcoes-de-varias-variaveis"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "=== Derivada direcional ===\nA derivada direcional é um escalar que representa a derivada de um campo escalar ao longo de um versor (no caso abaixo,\n  \n    \n      \n        \n          \n            \n              u\n              ^\n            \n          \n        \n      \n    \n    {\\displaystyle {\\hat {u}}}\n  \n).",
+          "claim": "https://pt.wikipedia.org/wiki/Gradiente - sustenta: === Derivada direcional ===",
+          "support_overlap": 0.3333,
+          "support_status": "basic_overlap_ok",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S3",
+          "used": true,
+          "chunk_id": "ee8b679d941c994f",
+          "source_url": "https://pt.wikipedia.org/wiki/Campo_conservativo",
+          "topics": [
+            "funcoes-potenciais-e-integrais-de-linha"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "F\n                →\n              \n            \n          \n          \n            c\n            o\n            n\n            s\n          \n        \n        ⋅\n        d\n        \n          \n            \n              r\n              →\n            \n          \n        \n        =\n        φ\n        (\n        x\n        ,",
+          "claim": "https://pt.wikipedia.org/wiki/Campo_conservativo - sustenta: F",
+          "support_overlap": 0.0,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "S1 tem baixo overlap lexical entre afirmação e trecho de suporte",
+        "S3 tem baixo overlap lexical entre afirmação e trecho de suporte"
+      ],
+      "passed": true
+    },
+    "7": {
+      "item_id": 7,
+      "required_citation": false,
+      "no_citation_expected": false,
+      "available_source_count": 2,
+      "used_citation_count": 2,
+      "available_sources": [
+        "S1",
+        "S2"
+      ],
+      "used_citations": [
+        "S1",
+        "S2"
+      ],
+      "invalid_citations": [],
+      "urls_cited_in_answer": [
+        "https://pt.wikipedia.org/wiki/Derivada_direcional",
+        "https://pt.wikipedia.org/wiki/Gradiente"
+      ],
+      "missing_required_citation": false,
+      "unexpected_citation": false,
+      "missing_chunk_id_count": 0,
+      "missing_source_url_count": 0,
+      "missing_support_excerpt_count": 0,
+      "low_support_overlap_count": 0,
+      "source_checks": [
+        {
+          "source_id": "S1",
+          "used": true,
+          "chunk_id": "409130ab17a1602b",
+          "source_url": "https://pt.wikipedia.org/wiki/Derivada_direcional",
+          "topics": [
+            "funcoes-de-varias-variaveis"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "Em matemática, a derivada direcional de uma função multivariável diferenciável ao longo de um dado vetor v em um dado ponto x intuitivamente representa a taxa instantânea de variação da função, movendo-se através de x com uma velocidade especificada por v.",
+          "claim": "A derivada direcional de uma função multivariável em uma determinada direção é o produto escalar entre o vetor gradiente da função e um vetor unitário naquela direção.",
+          "support_overlap": 0.3846,
+          "support_status": "basic_overlap_ok",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S2",
+          "used": true,
+          "chunk_id": "292bb1c179b10f6f",
+          "source_url": "https://pt.wikipedia.org/wiki/Gradiente",
+          "topics": [
+            "funcoes-de-varias-variaveis"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "No cálculo vetorial o gradiente (ou vetor gradiente) é um vetor que indica o sentido e a direção na qual, por deslocamento a partir do ponto especificado, obtém-se o maior incremento possível no valor de uma grandeza a partir da qual se define um campo escalar para o espaço em consideração.",
+          "claim": "https://pt.wikipedia.org/wiki/Gradiente - sustenta: No cálculo vetorial o gradiente (ou vetor gradiente) é um vetor que indica o sentido e a direção na qual, por deslocamento a partir do ponto especificado, obtém",
+          "support_overlap": 0.8125,
+          "support_status": "basic_overlap_ok",
+          "missing_fields": []
+        }
+      ],
+      "failures": [],
+      "warnings": [],
+      "passed": true
+    },
+    "8": {
+      "item_id": 8,
+      "required_citation": true,
+      "no_citation_expected": false,
+      "available_source_count": 3,
+      "used_citation_count": 3,
+      "available_sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "used_citations": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "invalid_citations": [],
+      "urls_cited_in_answer": [
+        "https://pt.wikipedia.org/wiki/Campo_conservativo",
+        "https://pt.wikipedia.org/wiki/Gradiente",
+        "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz"
+      ],
+      "missing_required_citation": false,
+      "unexpected_citation": false,
+      "missing_chunk_id_count": 0,
+      "missing_source_url_count": 0,
+      "missing_support_excerpt_count": 0,
+      "low_support_overlap_count": 1,
+      "source_checks": [
+        {
+          "source_id": "S1",
+          "used": true,
+          "chunk_id": "ee8b679d941c994f",
+          "source_url": "https://pt.wikipedia.org/wiki/Campo_conservativo",
+          "topics": [
+            "funcoes-potenciais-e-integrais-de-linha"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "F\n                →\n              \n            \n          \n          \n            c\n            o\n            n\n            s\n          \n        \n        ⋅\n        d\n        \n          \n            \n              r\n              →\n            \n          \n        \n        =\n        φ\n        (\n        x\n        ,",
+          "claim": "→",
+          "support_overlap": 0.0,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S2",
+          "used": true,
+          "chunk_id": "a29b04bb82ea6af0",
+          "source_url": "https://pt.wikipedia.org/wiki/Gradiente",
+          "topics": [
+            "funcoes-de-varias-variaveis"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "== Definição ==\n\nO vetor gradiente ou simplesmente gradiente de um campo escalar \n  \n    \n      \n        \n          f\n          \n            (\n            \n              x\n              \n                1\n              \n            \n            ,\n            \n              x\n              \n                2",
+          "claim": "https://pt.wikipedia.org/wiki/Gradiente - sustenta: == Definição ==",
+          "support_overlap": 0.4,
+          "support_status": "basic_overlap_ok",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S3",
+          "used": true,
+          "chunk_id": "b0f0e48b7c9f8df8",
+          "source_url": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz",
+          "topics": [
+            "derivadas-de-ordem-superior"
+          ],
+          "evaluator_score": 0.91,
+          "support_excerpt": "Este relato é um método clássico direto encontrado em muitos livros didáticos, por exemplo em Burkill, Apostol e Rudin.",
+          "claim": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz - sustenta: Este relato é um método clássico direto encontrado em muitos livros didáticos, por exemplo em Burkill, Apostol e Rudin.",
+          "support_overlap": 1.0,
+          "support_status": "basic_overlap_ok",
+          "missing_fields": []
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "S1 tem baixo overlap lexical entre afirmação e trecho de suporte"
+      ],
+      "passed": true
+    },
+    "9": {
+      "item_id": 9,
+      "required_citation": false,
+      "no_citation_expected": true,
+      "available_source_count": 0,
+      "used_citation_count": 0,
+      "available_sources": [],
+      "used_citations": [],
+      "invalid_citations": [],
+      "urls_cited_in_answer": [],
+      "missing_required_citation": false,
+      "unexpected_citation": false,
+      "missing_chunk_id_count": 0,
+      "missing_source_url_count": 0,
+      "missing_support_excerpt_count": 0,
+      "low_support_overlap_count": 0,
+      "source_checks": [],
+      "failures": [],
+      "warnings": [],
+      "passed": true
+    },
+    "10": {
+      "item_id": 10,
+      "required_citation": false,
+      "no_citation_expected": true,
+      "available_source_count": 3,
+      "used_citation_count": 3,
+      "available_sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "used_citations": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "invalid_citations": [],
+      "urls_cited_in_answer": [
+        "https://openstax.org/books/calculus-volume-3/pages/4-1-functions-of-several-variables",
+        "https://openstax.org/books/calculus-volume-3/pages/5-1-double-integrals-over-rectangular-regions",
+        "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      ],
+      "missing_required_citation": false,
+      "unexpected_citation": true,
+      "missing_chunk_id_count": 0,
+      "missing_source_url_count": 0,
+      "missing_support_excerpt_count": 0,
+      "low_support_overlap_count": 3,
+      "source_checks": [
+        {
+          "source_id": "S1",
+          "used": true,
+          "chunk_id": "520f393eae087963",
+          "source_url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals",
+          "topics": [
+            "funcoes-potenciais-e-integrais-de-linha"
+          ],
+          "evaluator_score": 0.9625,
+          "support_excerpt": "t i * ) for 1 ≤ i ≤ n .",
+          "claim": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals - sustenta: t i * ) for 1 ≤ i ≤ n .",
+          "support_overlap": 0.0,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S2",
+          "used": true,
+          "chunk_id": "5fe820b1173b00b3",
+          "source_url": "https://openstax.org/books/calculus-volume-3/pages/4-1-functions-of-several-variables",
+          "topics": [
+            "funcoes-de-varias-variaveis"
+          ],
+          "evaluator_score": 0.9625,
+          "support_excerpt": "( x , y ) = c .",
+          "claim": "https://openstax.org/books/calculus-volume-3/pages/4-1-functions-of-several-variables - sustenta: ( x , y ) = c .",
+          "support_overlap": 0.0,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        },
+        {
+          "source_id": "S3",
+          "used": true,
+          "chunk_id": "7a0f55f79dc53ead",
+          "source_url": "https://openstax.org/books/calculus-volume-3/pages/5-1-double-integrals-over-rectangular-regions",
+          "topics": [
+            "integrais-multiplas-mudanca-de-variaveis-em-integrais"
+          ],
+          "evaluator_score": 0.9625,
+          "support_excerpt": "2 ] R = [ 0 , π ] × [ 0 , π 2 ] 5 .",
+          "claim": "https://openstax.org/books/calculus-volume-3/pages/5-1-double-integrals-over-rectangular-regions - sustenta: 2 ] R = [ 0 , π ] × [ 0 , π 2 ] 5 .",
+          "support_overlap": 0.0,
+          "support_status": "low_overlap",
+          "missing_fields": []
+        }
+      ],
+      "failures": [
+        "item de recusa/sem suporte citou fonte ou URL"
+      ],
+      "warnings": [
+        "S1 tem baixo overlap lexical entre afirmação e trecho de suporte",
+        "S2 tem baixo overlap lexical entre afirmação e trecho de suporte",
+        "S3 tem baixo overlap lexical entre afirmação e trecho de suporte"
+      ],
+      "passed": false
+    }
+  }
+}

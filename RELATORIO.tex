@@ -1,0 +1,381 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\newcolumntype{P}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\sloppy
+
+\title{Marketplace de Agentes Acadêmicos via MCP: Construção de um\\
+Agente Acadêmico de Conteúdo para Cálculo II (Trilha B)}
+
+\author{Nathã Barbosa de Souza Pinto, Cristiano Cardoso Cavalcante Lima}
+
+\address{
+  Instituto de Computação -- Universidade Federal do Amazonas (UFAM)\\
+  Manaus -- AM -- Brasil\\
+  \email{\{natha.pinto,cristiano.lima\}@icomp.ufam.edu.br}
+  \\[6pt]
+  \begin{minipage}{0.85\textwidth}
+    \centering\footnotesize
+    ICC220 -- Tópicos Especiais em Bancos de Dados / PPGINF528 -- Tópicos Especiais em
+    Recuperação de Informação -- 2026/01\\
+    Professores: André Luiz da Costa Carvalho e Altigran Soares da Silva
+  \end{minipage}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{resumo}
+Este trabalho descreve a construção de um Agente Acadêmico de Conteúdo (Trilha B) para a
+disciplina Cálculo~II (IEM021) da UFAM, componente de um \textit{marketplace} de agentes
+acadêmicos interoperáveis via \textit{Model Context Protocol} (MCP). O componente é formado por um
+construtor de \textit{corpus} \textit{offline} e um servidor MCP \textit{read-only}, alcançando 100\%
+de cobertura da ementa (7 tópicos, 304 \textit{chunks}, credibilidade média de 0,9398). Na Fase~2,
+o servidor foi integrado a dois tutores reais sorteados e a um tutor extra voluntário, com 100\%
+de sucesso técnico nas chamadas MCP completadas, revelando limitações de estabilidade temporal do
+\textit{corpus} e uma falha de composição de resposta no lado do tutor.
+\end{resumo}
+
+\begin{abstract}
+This paper describes the construction of an Academic Content Agent (Track B) for the Calculus~II
+course (IEM021) at UFAM, a component of a marketplace of interoperable academic agents via the
+Model Context Protocol (MCP). The component comprises an offline corpus builder and a read-only
+MCP server, achieving 100\% syllabus coverage (7 topics, 304 chunks, average credibility of
+0.9398). In Phase~2, the server was integrated with two drawn real tutors and one extra volunteer
+tutor, with 100\% technical success on completed MCP calls, revealing temporal-stability
+limitations of the corpus and a response-composition failure on the tutor side.
+\end{abstract}
+
+\section{Introdução}
+
+Sistemas tutores automatizados enfrentam dois desafios centrais de Processamento de Linguagem
+Natural: a coleta e organização de material de estudo a partir de fontes heterogêneas da
+\textit{web} e a condução pedagógica fundamentada nesse material. Soluções baseadas exclusivamente
+em \textit{Large Language Models} (LLMs) de propósito geral tendem a alucinar conteúdo de domínio,
+não citam fontes verificáveis e não permitem inspecionar o conhecimento subjacente às respostas
+\cite{mcp}.
+
+Este relatório documenta o desenvolvimento de um \textbf{Agente Acadêmico de Conteúdo}
+(Trilha~B, componente \texttt{B-G1}) para a disciplina \textbf{Cálculo~II (IEM021)} da UFAM,
+integrado ao \textit{Marketplace de Agentes Acadêmicos via MCP} proposto nas disciplinas
+ICC220/PPGINF528 (2026/01). O escopo entregue cobre as duas peças exigidas pelo enunciado: um
+construtor de \textit{corpus offline} (\textit{parser} de ementa, \textit{planner}, coletor,
+avaliador de fontes, indexador e congelador) e um servidor MCP \textit{read-only} que expõe o
+\textit{corpus} congelado via o contrato comum da Seção~3.1 do enunciado. Cálculo~II foi escolhida
+por três razões: (i) abundância de material acadêmico aberto de qualidade (OpenStax, MIT OCW,
+Wikipedia); (ii) provas ENADE com gabarito oficial disponíveis pelo INEP, nas edições
+\textbf{2021 (Matemática -- Licenciatura)} e \textbf{2014 (Matemática -- Bacharelado)}; e
+(iii) tópicos objetivos, favoráveis à avaliação automática de acurácia. A combinação das duas
+edições ENADE cobre tanto fundamentos (Licenciatura~2021) quanto os tópicos avançados da ementa
+--- integrais múltiplas, Teorema de Green, séries de Taylor --- mais presentes na prova de
+Bacharelado~2014.
+
+\section{Metodologia}
+
+\subsection{Disciplina-Alvo e Ementa}
+
+IEM021 -- Cálculo~II é oferecida pelo Departamento de Matemática do ICE/UFAM (90h, obrigatória em
+oito cursos). A ementa oficial organiza o conteúdo em sete tópicos: (I) Derivação de Vetores e
+Regra da Cadeia; (II) Funções de Várias Variáveis; (III) Funções Potenciais e Integrais de Linha;
+(IV) Derivadas de Ordem Superior; (V) Máximos e Mínimos; (VI) Integrais Múltiplas e Mudança de
+Variáveis; (VII) Fórmula de Taylor e Séries.
+
+\subsection{Arquitetura do Componente}
+
+O \textbf{construtor de \textit{corpus}} é um \textit{pipeline} de sete módulos Python
+(\texttt{python -m builder}): \texttt{parse\_ementa.py} (ementa~$\rightarrow$~JSON estruturado
+com 31 subtópicos, conceitos, pré-requisitos e bibliografia); \texttt{planner.py} (plano de coleta
+por tópico, \textit{queries} em PT/EN); \texttt{collector.py} (seis fontes, respeitando
+\texttt{robots.txt} e \textit{rate limits}); \texttt{evaluator.py} (heurística de cinco
+critérios); \texttt{dedup.py} (\textit{hash} exato e similaridade de \textit{shingles}, Jaccard
+$\geq 0{,}85$); \texttt{indexer.py} (\textit{chunks} de 512 \textit{tokens}, sobreposição de 64,
+ChromaDB, modelo \texttt{paraphrase-multilingual-MiniLM-L12-v2}); e \texttt{freeze.py}
+(\texttt{corpus\_hash} SHA-256 determinístico). O valor padrão de recuperação $k=5$
+(configurável até 20) segue literatura de RAG para tutoria.
+
+O \textbf{servidor MCP de conteúdo} foi implementado com FastMCP \cite{fastmcp} sobre transporte
+\textit{stdio}, com carregamento \textit{lazy} do ChromaDB para resposta imediata ao
+\textit{handshake}. É estritamente \textit{read-only}: não expõe \textit{tools} de busca, coleta
+ou escrita.
+
+\begin{table}[h]
+\centering
+\caption{Tools do contrato MCP implementadas}
+\label{tab:tools}
+\small
+\begin{tabularx}{\linewidth}{l l X}
+\toprule
+\textbf{Tool} & \textbf{Assinatura} & \textbf{Descrição} \\
+\midrule
+\texttt{list\_topics} & \texttt{()} & Tópicos, cobertura, credibilidade média, \texttt{corpus\_hash} \\
+\texttt{corpus\_query} & \texttt{(query,k,filters)} & Busca semântica por cosseno; $k$ \textit{chunks} com metadados completos \\
+\texttt{get\_chunk} & \texttt{(chunk\_id)} & Recupera \textit{chunk} específico por SHA-256 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Avaliador de Fontes}
+
+A heurística combina cinco critérios ponderados: domínio da fonte (0,30 -- OpenStax/MIT~OCW$=1{,}00$,
+arXiv$=0{,}90$, Wikipedia$=0{,}85$); indícios de revisão editorial ou colaborativa (0,25); idioma
+(0,15 -- PT$=1{,}00$, EN$=0{,}75$); presença de autor identificável (0,15); e volume de conteúdo
+(0,15). Documentos com \textit{score}${}<0{,}40$ são reprovados; dos 26 documentos coletados,
+todos foram aprovados, com \textit{score} médio de \textbf{0,9398}.
+
+\section{Resultados da Fase 1}
+
+O servidor MCP implementa corretamente as três \textit{tools} do contrato e os metadados
+obrigatórios por \textit{chunk} (URL, \textit{score}, data, tópico, \textit{hash}, disciplina e
+\texttt{corpus\_hash}). Testes unitários confirmaram conformidade com os requisitos R01--R12 do
+\texttt{check\_contract} (\texttt{evaluation/contract/report.json}).
+
+Com $N=3$ documentos mínimos por tópico, a cobertura da ementa atingiu \textbf{100\%} (7/7), com
+304 \textit{chunks} indexados em 66,58~s de execução (Tabela~\ref{tab:cobertura}).
+
+\begin{table}[h]
+\centering
+\caption{Cobertura, diversidade e credibilidade por tópico}
+\label{tab:cobertura}
+\small
+\begin{tabularx}{\linewidth}{X c c}
+\toprule
+\textbf{Tópico} & \textbf{Docs} & \textbf{Cred. média} \\
+\midrule
+I -- Derivação de Vetores e Regra da Cadeia & 20 & 0,9089 \\
+II -- Funções de Várias Variáveis & 85 & 0,9460 \\
+III -- Funções Potenciais e Integrais de Linha & 60 & 0,9488 \\
+IV -- Derivadas de Ordem Superior & 20 & 0,9074 \\
+V -- Máximos e Mínimos & 28 & 0,9545 \\
+VI -- Integrais Múltiplas e Mudança de Variáveis & 46 & 0,9522 \\
+VII -- Fórmula de Taylor e Séries & 56 & 0,9606 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+O gargalo do coletor foi o \textit{rate limit} da Wikipedia (429): 15/20 sucessos em PT e 0/11 em
+EN, compensados por OpenStax (7/9), MIT~OCW (4/4) e arXiv (4/4); Khan Academy (0/4) falhou por
+conteúdo renderizado via \textit{client-side JS}.
+
+\section{Resultados da Fase 2}
+
+O servidor \texttt{B-G1} foi disponibilizado a dois tutores sorteados -- \textbf{A-P1} (Giovanni
+Escóssio Zanardo) e \textbf{A-G1} (Gabriel Dias Gonçalves e José Santarem) -- e a um tutor extra
+voluntário, \textbf{A-G2}, fora do sorteio (bônus técnico da Seção~5 do enunciado; não substitui os
+dois pares mínimos exigidos).
+
+Cada parceiro regenerou o \textit{corpus} localmente (\texttt{python~-m~builder}), comportamento
+esperado pois o índice ChromaDB não é versionado (Seção~6.4 do enunciado). Como o \textit{rate
+limiting} da Wikipedia varia entre execuções, os \texttt{corpus\_hash} resultantes diferem entre
+B-G1 (referência), A-P1 e A-G2, embora a estrutura (7 tópicos, mesmas fontes-alvo) permaneça
+idêntica -- limitação discutida na Seção~\ref{sec:discussao}.
+
+\subsection{Par A-P1 -- integração bem-sucedida}
+
+O tutor A-P1 subiu o servidor localmente e aplicou a Suíte Estrutural (11 \textit{queries}) e a
+Suíte de Conteúdo ENADE (20 questões: 6 da edição 2021--Licenciatura e 14 da edição
+2014--Bacharelado, curadoria em \texttt{evaluation/content/enade\_curadoria\_calculo2.json}).
+Todas as 62 chamadas retornaram sucesso, com 5 \textit{chunks} por \texttt{corpus\_query}.
+
+\subsection{Par A-G1 -- falha técnica registrada}
+
+O tutor A-G1 completou a coleta (25 documentos, 91,36~s) mas não concluiu o \textit{handshake} MCP
+(\texttt{initialize()} travava indefinidamente). A causa mais provável é o \textit{timeout} do
+cliente MCP de A-G1 sendo excedido pelo carregamento inicial dos \textit{embeddings} (471~MB) --
+mesma causa do Erro~5 (Seção~\ref{sec:erros}). Como A-P1 conectou-se ao mesmo servidor e versão
+sem problemas, descarta-se falha no servidor B-G1 como causa primária. O log da tentativa está em
+\texttt{evaluation/interop/ag1\_collection\_log.json}.
+
+\subsection{Par extra A-G2 (bônus, fora do sorteio)}
+
+Tutor A-G2 (\texttt{qwen2.5-7b-instruct-mlx} via LM~Studio, temperatura~0), conectado via
+\textit{stdio}. A auditoria de \textit{tools} confirmou uso restrito às três \textit{tools} do
+contrato, sem chamadas não permitidas.
+
+\begin{table}[h]
+\centering
+\caption{Chamadas MCP por parceiro real (tools comuns)}
+\label{tab:interop}
+\small
+\begin{tabularx}{\linewidth}{l c c c c}
+\toprule
+\textbf{Parceiro} & \textbf{Tool} & \textbf{Chamadas} & \textbf{Sucesso} & \textbf{Lat. média} \\
+\midrule
+A-P1 & \texttt{list\_topics}  & 31 & 100\% & 10.274~ms \\
+A-P1 & \texttt{corpus\_query} & 31 & 100\% & 28~ms \\
+A-G2 & \texttt{list\_topics}  & 10 & 100\% & 10.316~ms \\
+A-G2 & \texttt{corpus\_query} & 30 & 100\% & 58~ms \\
+A-G2 & \texttt{get\_chunk}    & 22 & 100\% & 2,03~ms \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar, bar width=16pt, ymode=log,
+    symbolic x coords={list\_topics,corpus\_query},
+    xtick=data, width=0.85\linewidth, height=4.6cm,
+    ylabel={Latência média (ms, escala log)},
+    enlarge x limits=0.4,
+    legend style={at={(0.5,1.18)},anchor=north,legend columns=-1,font=\footnotesize},
+    nodes near coords, every node near coord/.append style={font=\tiny},
+    ymin=1, ymax=20000,
+]
+\addplot coordinates {(list\_topics,10274) (corpus\_query,28)};
+\addplot coordinates {(list\_topics,10316) (corpus\_query,58)};
+\legend{A-P1, A-G2 (extra)}
+\end{axis}
+\end{tikzpicture}
+\caption{Latência média por \textit{tool} nos dois parceiros com integração completa. O primeiro
+\texttt{list\_topics} é dominado pelo carregamento único do modelo de \textit{embeddings}
+(\textit{lazy loading}); \texttt{corpus\_query} opera na casa de dezenas de milissegundos em
+ambos.}
+\label{fig:latencia}
+\end{figure}
+
+A latência elevada do primeiro \texttt{list\_topics} ($\sim$10,3~s, Figura~\ref{fig:latencia})
+reflete o custo único de carregar o modelo de \textit{embeddings} (471~MB); pago uma vez por
+sessão graças ao \textit{lazy loading}, e reproduzido de forma consistente em dois ambientes e
+modelos de tutor distintos (A-P1 e A-G2, este com \texttt{qwen2.5-7b-instruct-mlx}).
+
+Na Suíte Estrutural aplicada por A-G2, 9/10 itens foram aprovados; o item~10 (recusa de orientação
+médica) reprovou por citação indevida, discutida como Erro~6. A auditoria de citações registrou 15
+alertas de baixo \textit{overlap} lexical entre afirmações do tutor e os \textit{chunks} citados,
+concentrados em material com fórmulas matemáticas mal preservadas (Erro~4) -- evidência de que
+aprovação de contrato mede interoperabilidade de protocolo, não qualidade pedagógica final.
+
+\section{Análise de Erros}
+\label{sec:erros}
+
+\textbf{E1 -- \textit{Rate limit} Wikipedia (HTTP~429).} IPs de ambiente compartilhado (Colab)
+ativaram bloqueios; menor diversidade PT nos tópicos~I e~VII; mitigado com \textit{delay} de
+1,5~s e \textit{User-Agent} próprio.
+\textbf{E2 -- URLs descontinuadas no OpenStax (404).} Reorganização entre edições reduziu
+cobertura do tópico~I, compensada por MIT~OCW.
+\textbf{E3 -- Khan Academy bloqueando \textit{scraping}.} Conteúdo renderizado via React;
+solução futura: Selenium/Playwright.
+\textbf{E4 -- Símbolos matemáticos corrompidos.} \textit{Encoding} incorreto no BeautifulSoup
+(\texttt{"â f â y"} em vez de $\partial f/\partial y$); mitigado forçando
+\texttt{resp.encoding=resp.apparent\_encoding}.
+\textbf{E5 -- Latência do primeiro \texttt{list\_topics}.} Carregamento do modelo de
+\textit{embeddings} (471~MB); custo pago uma única vez por sessão via \textit{lazy loading} --
+mesma causa da falha de A-G1.
+\textbf{E6 -- Citação indevida em resposta de recusa (A-G2).} No item de recusa de orientação
+médica, o tutor recusou corretamente mas anexou três citações do \textit{corpus} de Cálculo~II sem
+relação com a alegação (\textit{overlap} lexical nulo). É falha de \textbf{geração no lado da
+Trilha~A}: o servidor retornou \textit{chunks} tecnicamente válidos para a consulta recebida; o
+defeito está na composição da resposta final, não na recuperação -- distinção relevante para a
+Seção~\ref{sec:discussao}.
+
+\section{Discussão}
+\label{sec:discussao}
+
+\textbf{Cobertura vs. tempo.} O \textit{pipeline} completou 100\% da cobertura em 66,58~s; o
+gargalo foi o \textit{rate limit} da Wikipedia, compensado por OpenStax/MIT~OCW.
+\textbf{Diversidade vs. credibilidade.} Tópicos com menor diversidade de domínios (I e VII, 2
+fontes) mantiveram credibilidade${}>0{,}90$, pois a priorização de OpenStax/MIT~OCW garante
+material revisado editorialmente.
+\textbf{Agnosticismo de domínio.} Testes com consultas fora do domínio principal retornaram
+\textit{chunks} semanticamente próximos sem erros, validando o design \textit{read-only}.
+\textbf{Estabilidade temporal.} URLs do OpenStax/MIT~OCW podem mudar entre edições e o
+\textit{rate limit} da Wikipedia varia por execução, tornando o \textit{corpus} parcialmente
+não determinístico -- observado nos três \texttt{corpus\_hash} distintos da Fase~2. A estrutura
+(7 tópicos, mesmas fontes-alvo) permanece estável; varia apenas o subconjunto de artigos da
+Wikipedia efetivamente coletado.
+\textbf{Contaminação de dados.} O ENADE é público e provavelmente integra corpora de pré-treino
+de LLMs; por isso o \textit{corpus} de referência é fixado por \texttt{corpus\_hash}, \textit{seed}
+42 e decodificação determinística (\textit{greedy}, temperatura~0), tornando a avaliação
+rastreável mesmo sob esse risco.
+\textbf{Licenciamento e proveniência.} As fontes priorizadas têm regimes distintos: OpenStax é
+CC~BY (menor risco jurídico); MIT~OCW é CC~BY-NC-SA (restringe uso comercial); Wikipedia é
+CC~BY-SA (exige mesma licença em obras derivadas); arXiv mantém direitos com autores/periódico. O
+repositório versiona apenas metadados e \textit{chunks} tratados, sem republicar documentos
+brutos (Seção~6.4 do enunciado), mitigando risco de violação de licença.
+\textbf{Potencial de generalização.} Os três experimentos (A-P1 bem-sucedido, A-G1 com falha
+técnica documentada, A-G2 extra) indicam que o contrato MCP foi implementado de forma desacoplada
+da identidade do parceiro -- A-P1 e A-G2 usam \textit{stacks} de LLM totalmente distintas e
+obtiveram 100\% de sucesso técnico nas chamadas completadas. A generalização observada é, porém,
+parcial: concentra-se em uma mesma área (Matemática/Cálculo), favorecendo sobreposição vocabular.
+O Erro~6 mostra que interoperabilidade de protocolo não garante qualidade pedagógica -- teste
+futuro natural é conectar o servidor a um tutor calibrado para área distinta (e.g. História), onde
+a ausência de \textit{chunks} relevantes deveria acionar admissão de incerteza em vez de
+recuperação forçada.
+
+\textbf{Limitações.} (i)~ausência de fontes em PT de alta qualidade (SciELO); (ii)~\textit{chunks}
+do MIT~OCW com baixa densidade informacional (páginas de navegação); (iii)~símbolos matemáticos
+convertidos imperfeitamente de MathML/\LaTeX; (iv)~ausência de teste de interoperabilidade com
+tutor de área não relacionada a Matemática, limitando conclusões sobre agnosticismo de domínio a
+disciplinas tematicamente próximas.
+
+\section{Conclusão}
+
+Este trabalho demonstrou a viabilidade de um Agente Acadêmico de Conteúdo interoperável para
+Cálculo~II, com 100\% de cobertura dos sete tópicos da ementa, credibilidade média de 0,9398 e 304
+\textit{chunks} indexados. A separação entre construtor de \textit{corpus} e servidor MCP garantiu
+reprodutibilidade e estabilidade das respostas. Os experimentos de Fase~2 -- A-P1 (sucesso), A-G1
+(falha técnica documentada) e A-G2 (extra) -- validaram o design \textit{read-only} e o contrato
+MCP em múltiplos ambientes e modelos de tutor, revelando também que interoperabilidade de
+protocolo não equivale a qualidade pedagógica garantida (Erro~6). Os principais desafios técnicos
+-- \textit{rate limiting} de APIs públicas, fragilidade de URLs e custo de inicialização de
+\textit{embeddings} -- foram documentados e mitigados, constituindo contribuição prática para
+trabalhos futuros em recuperação de informação acadêmica.
+
+\begin{thebibliography}{9}
+
+\bibitem{openstax_calc2}
+STRANG, G. \textbf{Calculus Volume 2}. OpenStax, 2016. Disponível em:
+\url{https://openstax.org/books/calculus-volume-2}. Acesso em: 5 jul. 2026.
+
+\bibitem{openstax_calc3}
+STRANG, G. \textbf{Calculus Volume 3}. OpenStax, 2016. Disponível em:
+\url{https://openstax.org/books/calculus-volume-3}. Acesso em: 5 jul. 2026.
+
+\bibitem{mitocw}
+MIT OPENCOURSEWARE. \textbf{18.02SC Multivariable Calculus}. MIT, 2010. Disponível em:
+\url{https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010}. Acesso em: 5 jul. 2026.
+
+\bibitem{chromadb}
+CHROMA. \textbf{ChromaDB: the open-source embedding database}. 2023. Disponível em:
+\url{https://www.trychroma.com}. Acesso em: 5 jul. 2026.
+
+\bibitem{sentencetransformers}
+REIMERS, N.; GUREVYCH, I. Sentence-BERT: sentence embeddings using siamese BERT-networks. In:
+\textbf{EMNLP 2019}. p.~3982--3992. Disponível em: \url{https://arxiv.org/abs/1908.10084}.
+
+\bibitem{mcp}
+ANTHROPIC. \textbf{Model Context Protocol (MCP)}. 2024. Disponível em:
+\url{https://modelcontextprotocol.io}. Acesso em: 5 jul. 2026.
+
+\bibitem{fastmcp}
+FASTMCP. \textbf{FastMCP: fast, Pythonic MCP server framework}. 2024. Disponível em:
+\url{https://github.com/jlowin/fastmcp}. Acesso em: 5 jul. 2026.
+
+\bibitem{inep2021}
+INEP. \textbf{ENADE 2021 -- Matemática Licenciatura: prova e gabarito}. Disponível em:
+\url{https://download.inep.gov.br/enade/provas_e_gabaritos/2021_PV_licenciatura_matematica.pdf}.
+Acesso em: 5 jul. 2026.
+
+\bibitem{inep2014}
+INEP. \textbf{ENADE 2014 -- Matemática Bacharelado: prova e gabarito}. Disponível em:
+\url{https://download.inep.gov.br/educacao_superior/enade/provas/2014/33_matematica_bacharelado.pdf}.
+Acesso em: 5 jul. 2026.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,37 @@
+{
+  "partner": {
+    "name": "Cálculo II — B-G1",
+    "repository": "https://github.com/NathaBarbosa/tp3-trilha-b-calculo2",
+    "config": "agent/mcp_config.interop-calculo2.json"
+  },
+  "executed_at": "2026-07-13T00:54:10.659210+00:00",
+  "active_server": "calculo2-iem021",
+  "result": "passed",
+  "checks": {
+    "topics_discovered": 7,
+    "discipline": "Cálculo II",
+    "area": "Matemática — Licenciatura",
+    "corpus_hash": "6c909c2b29bfe55fc5ad5bf1870b9002e682e2dce02439209f49ff6404c30d65",
+    "chunk_id": "445d6927736f9531",
+    "source_url": "https://pt.wikipedia.org/wiki/C%C3%A1lculo_diferencial_e_integral",
+    "required_chunk_fields_missing": [],
+    "usable_text": true
+  },
+  "tool_calls": [
+    {
+      "tool": "list_topics",
+      "ok": true,
+      "latency_ms": 12244.8
+    },
+    {
+      "tool": "corpus_query",
+      "ok": true,
+      "latency_ms": 58.9
+    },
+    {
+      "tool": "get_chunk",
+      "ok": true,
+      "latency_ms": 2.09
+    }
+  ]
+}

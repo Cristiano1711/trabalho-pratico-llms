@@ -1,0 +1,543 @@
+{
+  "executado_em": "2026-07-12T17:50:24.796502+00:00",
+  "tempo_total_segundos": 91.36,
+  "total_tentativas": 52,
+  "sucessos": 25,
+  "falhas": 27,
+  "docs_coletados": 25,
+  "chamadas_por_fonte": {
+    "wikipedia_pt": 20,
+    "wikipedia_en": 11,
+    "openstax": 9,
+    "mit_ocw": 4,
+    "arxiv": 4,
+    "khan_academy": 4
+  },
+  "entradas": [
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Cálculo_diferencial_e_integral",
+      "topic_ids": [
+        "derivacao-de-vetores-e-regra-da-cadeia"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:48:55.855646+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Curva_parametrizada",
+      "topic_ids": [
+        "derivacao-de-vetores-e-regra-da-cadeia"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:48:57.988650+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Regra_da_cadeia",
+      "topic_ids": [
+        "derivacao-de-vetores-e-regra-da-cadeia"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:00.330440+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Curvatura",
+      "topic_ids": [
+        "derivacao-de-vetores-e-regra-da-cadeia"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:02.639908+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Função_de_várias_variáveis",
+      "topic_ids": [
+        "funcoes-de-varias-variaveis"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:04.760082+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Derivada_parcial",
+      "topic_ids": [
+        "funcoes-de-varias-variaveis",
+        "derivadas-de-ordem-superior"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:07.169645+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Gradiente",
+      "topic_ids": [
+        "funcoes-de-varias-variaveis"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:09.695116+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Plano_tangente",
+      "topic_ids": [
+        "funcoes-de-varias-variaveis"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:11.809672+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Derivada_direcional",
+      "topic_ids": [
+        "funcoes-de-varias-variaveis"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:14.381513+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Campo_conservativo",
+      "topic_ids": [
+        "funcoes-potenciais-e-integrais-de-linha"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:16.882828+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Integral_de_linha",
+      "topic_ids": [
+        "funcoes-potenciais-e-integrais-de-linha"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:19.228223+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz",
+      "topic_ids": [
+        "derivadas-de-ordem-superior"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:21.805680+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Hessiana",
+      "topic_ids": [
+        "derivadas-de-ordem-superior",
+        "maximos-e-minimos"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:23.967962+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Multiplicadores_de_Lagrange",
+      "topic_ids": [
+        "maximos-e-minimos"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:26.270812+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Integral_dupla",
+      "topic_ids": [
+        "integrais-multiplas-mudanca-de-variaveis-em-integrais"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:26.861902+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Teorema_de_Green",
+      "topic_ids": [
+        "integrais-multiplas-mudanca-de-variaveis-em-integrais"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:27.441417+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Jacobiano",
+      "topic_ids": [
+        "integrais-multiplas-mudanca-de-variaveis-em-integrais"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:28.040327+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Série_de_Taylor",
+      "topic_ids": [
+        "a-formula-de-taylor-e-series"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:28.615242+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Série_convergente",
+      "topic_ids": [
+        "a-formula-de-taylor-e-series"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:29.224095+00:00"
+    },
+    {
+      "fonte": "wikipedia_pt",
+      "url": "https://pt.wikipedia.org/wiki/Critério_da_razão",
+      "topic_ids": [
+        "a-formula-de-taylor-e-series"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:30.064754+00:00"
+    },
+    {
+      "fonte": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Parametric_equation",
+      "topic_ids": [
+        "derivacao-de-vetores-e-regra-da-cadeia"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:30.658708+00:00"
+    },
+    {
+      "fonte": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Chain_rule",
+      "topic_ids": [
+        "derivacao-de-vetores-e-regra-da-cadeia"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:31.241705+00:00"
+    },
+    {
+      "fonte": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Partial_derivative",
+      "topic_ids": [
+        "funcoes-de-varias-variaveis",
+        "derivadas-de-ordem-superior"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:31.823786+00:00"
+    },
+    {
+      "fonte": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Gradient",
+      "topic_ids": [
+        "funcoes-de-varias-variaveis"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:32.411893+00:00"
+    },
+    {
+      "fonte": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Conservative_vector_field",
+      "topic_ids": [
+        "funcoes-potenciais-e-integrais-de-linha"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:32.976635+00:00"
+    },
+    {
+      "fonte": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Line_integral",
+      "topic_ids": [
+        "funcoes-potenciais-e-integrais-de-linha"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:33.552514+00:00"
+    },
+    {
+      "fonte": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Lagrange_multiplier",
+      "topic_ids": [
+        "maximos-e-minimos"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:34.150484+00:00"
+    },
+    {
+      "fonte": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Multiple_integral",
+      "topic_ids": [
+        "integrais-multiplas-mudanca-de-variaveis-em-integrais"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:34.750910+00:00"
+    },
+    {
+      "fonte": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Green's_theorem",
+      "topic_ids": [
+        "integrais-multiplas-mudanca-de-variaveis-em-integrais"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:35.330057+00:00"
+    },
+    {
+      "fonte": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Taylor_series",
+      "topic_ids": [
+        "a-formula-de-taylor-e-series"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:35.923803+00:00"
+    },
+    {
+      "fonte": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ratio_test",
+      "topic_ids": [
+        "a-formula-de-taylor-e-series"
+      ],
+      "sucesso": false,
+      "motivo": "conteúdo insuficiente ou erro",
+      "ts": "2026-07-12T17:49:36.517555+00:00"
+    },
+    {
+      "fonte": "openstax",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/1-1-vectors-in-the-plane",
+      "topic_ids": [
+        "derivacao-de-vetores-e-regra-da-cadeia"
+      ],
+      "sucesso": false,
+      "motivo": "fetch ou parse falhou",
+      "ts": "2026-07-12T17:49:38.564429+00:00"
+    },
+    {
+      "fonte": "openstax",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-1-functions-of-several-variables",
+      "topic_ids": [
+        "funcoes-de-varias-variaveis"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:40.831588+00:00"
+    },
+    {
+      "fonte": "openstax",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-3-partial-derivatives",
+      "topic_ids": [
+        "funcoes-de-varias-variaveis"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:43.358730+00:00"
+    },
+    {
+      "fonte": "openstax",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-7-maximum-minimum-problems",
+      "topic_ids": [
+        "maximos-e-minimos"
+      ],
+      "sucesso": false,
+      "motivo": "fetch ou parse falhou",
+      "ts": "2026-07-12T17:49:45.046229+00:00"
+    },
+    {
+      "fonte": "openstax",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-8-lagrange-multipliers",
+      "topic_ids": [
+        "maximos-e-minimos"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:47.483118+00:00"
+    },
+    {
+      "fonte": "openstax",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/5-1-double-integrals-over-rectangular-regions",
+      "topic_ids": [
+        "integrais-multiplas-mudanca-de-variaveis-em-integrais"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:50.127262+00:00"
+    },
+    {
+      "fonte": "openstax",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals",
+      "topic_ids": [
+        "funcoes-potenciais-e-integrais-de-linha"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:52.802988+00:00"
+    },
+    {
+      "fonte": "openstax",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/5-1-sequences",
+      "topic_ids": [
+        "a-formula-de-taylor-e-series"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:55.307186+00:00"
+    },
+    {
+      "fonte": "openstax",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/6-1-power-series-and-functions",
+      "topic_ids": [
+        "a-formula-de-taylor-e-series"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:57.591954+00:00"
+    },
+    {
+      "fonte": "mit_ocw",
+      "url": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/pages/1.-vectors-and-matrices/part-a-vectors-determinants-and-planes/",
+      "topic_ids": [
+        "derivacao-de-vetores-e-regra-da-cadeia"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:49:59.769869+00:00"
+    },
+    {
+      "fonte": "mit_ocw",
+      "url": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/pages/2.-partial-derivatives/",
+      "topic_ids": [
+        "funcoes-de-varias-variaveis"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:50:01.943290+00:00"
+    },
+    {
+      "fonte": "mit_ocw",
+      "url": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/pages/3.-double-integrals-and-line-integrals-in-the-plane/",
+      "topic_ids": [
+        "integrais-multiplas-mudanca-de-variaveis-em-integrais"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:50:04.114551+00:00"
+    },
+    {
+      "fonte": "mit_ocw",
+      "url": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/pages/3.-double-integrals-and-line-integrals-in-the-plane/part-b-vector-fields-and-line-integrals/",
+      "topic_ids": [
+        "funcoes-potenciais-e-integrais-de-linha"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:50:06.403326+00:00"
+    },
+    {
+      "fonte": "arxiv",
+      "url": "https://arxiv.org/abs/2309.00966",
+      "topic_ids": [
+        "funcoes-de-varias-variaveis",
+        "derivadas-de-ordem-superior"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:50:09.048906+00:00"
+    },
+    {
+      "fonte": "arxiv",
+      "url": "https://arxiv.org/abs/1801.00042",
+      "topic_ids": [
+        "a-formula-de-taylor-e-series"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:50:11.438362+00:00"
+    },
+    {
+      "fonte": "arxiv",
+      "url": "https://arxiv.org/abs/2106.11452",
+      "topic_ids": [
+        "integrais-multiplas-mudanca-de-variaveis-em-integrais"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:50:13.797129+00:00"
+    },
+    {
+      "fonte": "arxiv",
+      "url": "https://arxiv.org/abs/1911.07700",
+      "topic_ids": [
+        "maximos-e-minimos",
+        "funcoes-potenciais-e-integrais-de-linha"
+      ],
+      "sucesso": true,
+      "motivo": "",
+      "ts": "2026-07-12T17:50:16.180654+00:00"
+    },
+    {
+      "fonte": "khan_academy",
+      "url": "https://pt.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/partial-derivative-and-gradient-articles/a/introduction-to-partial-derivatives",
+      "topic_ids": [
+        "funcoes-de-varias-variaveis"
+      ],
+      "sucesso": false,
+      "motivo": "fetch ou parse falhou",
+      "ts": "2026-07-12T17:50:18.420543+00:00"
+    },
+    {
+      "fonte": "khan_academy",
+      "url": "https://pt.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/optimizing-multivariable-functions/a/second-partial-derivative-test",
+      "topic_ids": [
+        "maximos-e-minimos"
+      ],
+      "sucesso": false,
+      "motivo": "fetch ou parse falhou",
+      "ts": "2026-07-12T17:50:20.545510+00:00"
+    },
+    {
+      "fonte": "khan_academy",
+      "url": "https://pt.khanacademy.org/math/multivariable-calculus/integrating-multivariable-functions/double-integrals-topic/a/double-integrals-review",
+      "topic_ids": [
+        "integrais-multiplas-mudanca-de-variaveis-em-integrais"
+      ],
+      "sucesso": false,
+      "motivo": "fetch ou parse falhou",
+      "ts": "2026-07-12T17:50:22.686616+00:00"
+    },
+    {
+      "fonte": "khan_academy",
+      "url": "https://pt.khanacademy.org/math/ap-calculus-bc/bc-series-new/bc-10-1/a/series-review",
+      "topic_ids": [
+        "a-formula-de-taylor-e-series"
+      ],
+      "sucesso": false,
+      "motivo": "fetch ou parse falhou",
+      "ts": "2026-07-12T17:50:24.796502+00:00"
+    }
+  ]
+}

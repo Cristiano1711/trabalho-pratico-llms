@@ -1,0 +1,31 @@
+{
+  "name": "calculo2-iem021-ufam",
+  "type": "conteudo",
+  "contract_version": "1.0",
+  "transport": "stdio",
+  "run": {
+    "command": "python -m mcp_content",
+    "cwd": ".",
+    "env": {}
+  },
+  "content": {
+    "discipline": "Cálculo II",
+    "code": "IEM021",
+    "institution": "UFAM — Instituto de Ciências Exatas",
+    "area": "Matemática — Licenciatura e Bacharelado",
+    "enade_editions": [
+      "2021",
+      "2014"
+    ],
+    "topics": [
+      "derivacao-de-vetores-e-regra-da-cadeia",
+      "funcoes-de-varias-variaveis",
+      "funcoes-potenciais-e-integrais-de-linha",
+      "derivadas-de-ordem-superior",
+      "maximos-e-minimos",
+      "integrais-multiplas-mudanca-de-variaveis-em-integrais",
+      "a-formula-de-taylor-e-series"
+    ],
+    "corpus_hash": "0de6afcabfce3f46c670dae07be95ecbcb9435376700601f2459842db48f2e09"
+  }
+}

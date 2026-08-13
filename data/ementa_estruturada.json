@@ -1,0 +1,115 @@
+{
+  "discipline": "Cálculo II",
+  "area": "Matemática — Licenciatura",
+  "topics": [
+    {
+      "topic_id": "derivacao-de-vetores-e-regra-da-cadeia",
+      "name": "Derivação de Vetores e Regra da Cadeia",
+      "subtopics": [
+        "Curva Parametrizada. Vetor Velocidade",
+        "Regra de Derivação",
+        "Regra da Cadeia",
+        "Curvatura e Raio de Curvatura de um Curva Parametrizada pelo Comprimento de Arco"
+      ],
+      "key_concepts": []
+    },
+    {
+      "topic_id": "funcoes-de-varias-variaveis",
+      "name": "Funções de Várias Variáveis",
+      "subtopics": [
+        "Gráficos e Curva de Nível",
+        "Derivadas Parciais",
+        "Diferenciabilidade e Gradiente",
+        "A Regra da Cadeia e o Gradiente",
+        "O Plano Tangente",
+        "Derivada Direcional",
+        "Lei da Conservação"
+      ],
+      "key_concepts": [
+        "funções de várias variáveis",
+        "curvas de nível",
+        "derivadas parciais",
+        "diferenciabilidade",
+        "gradiente",
+        "plano tangente",
+        "derivada direcional",
+        "lei da conservação"
+      ]
+    },
+    {
+      "topic_id": "funcoes-potenciais-e-integrais-de-linha",
+      "name": "Funções Potenciais e Integrais de Linha",
+      "subtopics": [
+        "Funções Potenciais",
+        "Derivação sob a Integral",
+        "Existência Local de Funções Potenciais",
+        "Integrais de Linha",
+        "Dependência do Caminho de Integração"
+      ],
+      "key_concepts": []
+    },
+    {
+      "topic_id": "derivadas-de-ordem-superior",
+      "name": "Derivadas de Ordem Superior",
+      "subtopics": [
+        "Derivadas Parciais Repetidas",
+        "Operadores Diferenciais Parciais",
+        "Fórmula de Taylor"
+      ],
+      "key_concepts": [
+        "derivadas parciais repetidas",
+        "operadores diferenciais parciais",
+        "fórmula de taylor",
+        "hessiana",
+        "derivadas de ordem superior"
+      ]
+    },
+    {
+      "topic_id": "maximos-e-minimos",
+      "name": "Máximos e Mínimos",
+      "subtopics": [
+        "Pontos Críticos",
+        "A Forma Quadrática",
+        "Multiplicadores de Lagrange"
+      ],
+      "key_concepts": [
+        "pontos críticos",
+        "máximos e mínimos",
+        "forma quadrática",
+        "multiplicadores de lagrange",
+        "otimização com restrição"
+      ]
+    },
+    {
+      "topic_id": "integrais-multiplas-mudanca-de-variaveis-em-integrais",
+      "name": "Integrais Múltiplas – Mudança de Variáveis em Integrais",
+      "subtopics": [
+        "Integrais Duplas",
+        "Integrais Repetidas",
+        "Integrais Triplas",
+        "Fórmula de Mudança de Variáveis",
+        "Teorema de Green"
+      ],
+      "key_concepts": []
+    },
+    {
+      "topic_id": "a-formula-de-taylor-e-series",
+      "name": "A Fórmula de Taylor e Séries",
+      "subtopics": [
+        "A Fórmula de Taylor",
+        "A Fórmula de Taylor das Funções Logarítmicas e Exponenciais",
+        "Séries Convergentes",
+        "O Teste da Razão e o Teste da Integral para Convergência de Séries"
+      ],
+      "key_concepts": []
+    }
+  ],
+  "prerequisites": [
+    "Cálculo I"
+  ],
+  "bibliography": [
+    "ÁVILA, G.S.S. Cálculo - Vol. 1: Livro Técnico e Científico.",
+    "GUIDORIZZI, H. Um curso de cálculo diferencial e integral - Vol 1: Livro Técnico e Científico."
+  ],
+  "extraction_errors": []
+}

@@ -1,0 +1,72 @@
+{
+  "corpus_hash": "0de6afcabfce3f46c670dae07be95ecbcb9435376700601f2459842db48f2e09",
+  "congelado_em": "2026-07-05T15:15:46.098117+00:00",
+  "discipline": "Cálculo II",
+  "area": "Matemática — Licenciatura",
+  "chunk_count": 304,
+  "topics_state": [
+    {
+      "topic_id": "derivacao-de-vetores-e-regra-da-cadeia",
+      "name": "Derivação de Vetores e Regra da Cadeia",
+      "document_count": 20,
+      "avg_credibility": 0.9089,
+      "coverage": 1.0,
+      "discipline": "Cálculo II",
+      "area": "Matemática — Licenciatura"
+    },
+    {
+      "topic_id": "funcoes-de-varias-variaveis",
+      "name": "Funções de Várias Variáveis",
+      "document_count": 85,
+      "avg_credibility": 0.946,
+      "coverage": 1.0,
+      "discipline": "Cálculo II",
+      "area": "Matemática — Licenciatura"
+    },
+    {
+      "topic_id": "funcoes-potenciais-e-integrais-de-linha",
+      "name": "Funções Potenciais e Integrais de Linha",
+      "document_count": 60,
+      "avg_credibility": 0.9488,
+      "coverage": 1.0,
+      "discipline": "Cálculo II",
+      "area": "Matemática — Licenciatura"
+    },
+    {
+      "topic_id": "derivadas-de-ordem-superior",
+      "name": "Derivadas de Ordem Superior",
+      "document_count": 20,
+      "avg_credibility": 0.9074,
+      "coverage": 1.0,
+      "discipline": "Cálculo II",
+      "area": "Matemática — Licenciatura"
+    },
+    {
+      "topic_id": "maximos-e-minimos",
+      "name": "Máximos e Mínimos",
+      "document_count": 28,
+      "avg_credibility": 0.9545,
+      "coverage": 1.0,
+      "discipline": "Cálculo II",
+      "area": "Matemática — Licenciatura"
+    },
+    {
+      "topic_id": "integrais-multiplas-mudanca-de-variaveis-em-integrais",
+      "name": "Integrais Múltiplas – Mudança de Variáveis em Integrais",
+      "document_count": 46,
+      "avg_credibility": 0.9522,
+      "coverage": 1.0,
+      "discipline": "Cálculo II",
+      "area": "Matemática — Licenciatura"
+    },
+    {
+      "topic_id": "a-formula-de-taylor-e-series",
+      "name": "A Fórmula de Taylor e Séries",
+      "document_count": 56,
+      "avg_credibility": 0.9606,
+      "coverage": 1.0,
+      "discipline": "Cálculo II",
+      "area": "Matemática — Licenciatura"
+    }
+  ]
+}

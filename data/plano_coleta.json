@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "seed": 42,
+  "discipline": "Cálculo II",
+  "area": "Matemática — Licenciatura",
+  "sources_available": [
+    "wikipedia_pt",
+    "wikipedia_en",
+    "openstax",
+    "mit_ocw",
+    "arxiv",
+    "khan_academy"
+  ],
+  "global_max_docs_per_topic": 15,
+  "topics": [
+    {
+      "topic_id": "derivacao-de-vetores-e-regra-da-cadeia",
+      "name": "Derivação de Vetores e Regra da Cadeia",
+      "queries": {
+        "pt": [
+          "curva parametrizada vetor velocidade cálculo",
+          "regra da cadeia funções vetoriais",
+          "curvatura raio de curvatura comprimento de arco"
+        ],
+        "en": [
+          "parametric curve velocity vector calculus",
+          "chain rule vector functions multivariable",
+          "curvature radius arc length parametric"
+        ]
+      },
+      "target_sources": [
+        "wikipedia_pt",
+        "openstax",
+        "mit_ocw",
+        "wikipedia_en"
+      ],
+      "max_docs_per_source": 3,
+      "max_docs_total": 15,
+      "min_docs_required": 3
+    },
+    {
+      "topic_id": "funcoes-de-varias-variaveis",
+      "name": "Funções de Várias Variáveis",
+      "queries": {
+        "pt": [
+          "funções de várias variáveis derivadas parciais",
+          "gradiente diferenciabilidade cálculo multivariável",
+          "plano tangente derivada direcional",
+          "curvas de nível superfícies"
+        ],
+        "en": [
+          "multivariable functions partial derivatives",
+          "gradient differentiability calculus",
+          "tangent plane directional derivative",
+          "level curves surfaces calculus"
+        ]
+      },
+      "target_sources": [
+        "wikipedia_pt",
+        "openstax",
+        "mit_ocw",
+        "khan_academy"
+      ],
+      "max_docs_per_source": 3,
+      "max_docs_total": 15,
+      "min_docs_required": 3
+    },
+    {
+      "topic_id": "funcoes-potenciais-e-integrais-de-linha",
+      "name": "Funções Potenciais e Integrais de Linha",
+      "queries": {
+        "pt": [
+          "funções potenciais campo conservativo",
+          "integrais de linha trabalho campo vetorial",
+          "dependência do caminho integral de linha"
+        ],
+        "en": [
+          "potential functions conservative field calculus",
+          "line integrals work vector field",
+          "path independence line integral"
+        ]
+      },
+      "target_sources": [
+        "wikipedia_pt",
+        "openstax",
+        "mit_ocw",
+        "wikipedia_en"
+      ],
+      "max_docs_per_source": 3,
+      "max_docs_total": 15,
+      "min_docs_required": 3
+    },
+    {
+      "topic_id": "derivadas-de-ordem-superior",
+      "name": "Derivadas de Ordem Superior",
+      "queries": {
+        "pt": [
+          "derivadas parciais repetidas teorema de schwarz",
+          "operadores diferenciais parciais laplaciano",
+          "fórmula de taylor funções de várias variáveis",
+          "hessiana matriz jacobiana"
+        ],
+        "en": [
+          "higher order partial derivatives mixed partials",
+          "partial differential operators Laplacian",
+          "Taylor formula multivariable functions",
+          "Hessian matrix second derivatives"
+        ]
+      },
+      "target_sources": [
+        "wikipedia_pt",
+        "openstax",
+        "mit_ocw",
+        "arxiv"
+      ],
+      "max_docs_per_source": 3,
+      "max_docs_total": 15,
+      "min_docs_required": 3
+    },
+    {
+      "topic_id": "maximos-e-minimos",
+      "name": "Máximos e Mínimos",
+      "queries": {
+        "pt": [
+          "máximos e mínimos funções de várias variáveis",
+          "pontos críticos forma quadrática teste hessiana",
+          "multiplicadores de lagrange otimização com restrição"
+        ],
+        "en": [
+          "maxima minima multivariable functions critical points",
+          "quadratic form Hessian test saddle point",
+          "Lagrange multipliers constrained optimization"
+        ]
+      },
+      "target_sources": [
+        "wikipedia_pt",
+        "openstax",
+        "khan_academy",
+        "mit_ocw"
+      ],
+      "max_docs_per_source": 3,
+      "max_docs_total": 15,
+      "min_docs_required": 3
+    },
+    {
+      "topic_id": "integrais-multiplas-mudanca-de-variaveis-em-integrais",
+      "name": "Integrais Múltiplas – Mudança de Variáveis em Integrais",
+      "queries": {
+        "pt": [
+          "integrais duplas triplas Fubini",
+          "mudança de variáveis coordenadas polares cilíndricas esféricas",
+          "teorema de green integral dupla",
+          "jacobiano transformação de coordenadas"
+        ],
+        "en": [
+          "double triple integrals Fubini theorem",
+          "change of variables polar cylindrical spherical coordinates",
+          "Green theorem double integral",
+          "Jacobian coordinate transformation"
+        ]
+      },
+      "target_sources": [
+        "wikipedia_pt",
+        "openstax",
+        "mit_ocw",
+        "khan_academy"
+      ],
+      "max_docs_per_source": 3,
+      "max_docs_total": 15,
+      "min_docs_required": 3
+    },
+    {
+      "topic_id": "a-formula-de-taylor-e-series",
+      "name": "A Fórmula de Taylor e Séries",
+      "queries": {
+        "pt": [
+          "fórmula de Taylor série de Taylor funções reais",
+          "séries numéricas convergência divergência",
+          "teste da razão teste da integral convergência",
+          "série de Taylor logaritmo exponencial"
+        ],
+        "en": [
+          "Taylor series formula remainder term",
+          "numerical series convergence divergence tests",
+          "ratio test integral test series",
+          "Taylor series logarithm exponential functions"
+        ]
+      },
+      "target_sources": [
+        "wikipedia_pt",
+        "openstax",
+        "mit_ocw",
+        "arxiv"
+      ],
+      "max_docs_per_source": 3,
+      "max_docs_total": 15,
+      "min_docs_required": 3
+    }
+  ]
+}

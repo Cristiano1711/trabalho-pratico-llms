@@ -1,0 +1,353 @@
+{
+  "generated_at": "2026-07-13T00:56:53.767915+00:00",
+  "scope": "Auditoria de uso exclusivo das tools MCP permitidas durante a Suíte Estrutural.",
+  "summary": {
+    "items_total": 10,
+    "allowed_tools": [
+      "corpus_query",
+      "get_chunk",
+      "list_topics"
+    ],
+    "tools_used": [
+      "corpus_query",
+      "get_chunk",
+      "list_topics"
+    ],
+    "servers_used": [
+      "calculo2-iem021"
+    ],
+    "total_tool_calls": 62,
+    "calls_by_tool": {
+      "corpus_query": 30,
+      "get_chunk": 22,
+      "list_topics": 10
+    },
+    "calls_by_server": {
+      "calculo2-iem021": 62
+    },
+    "disallowed_tool_count": 0,
+    "items_with_disallowed_tools": 0,
+    "failed_tool_call_count": 0,
+    "items_with_failed_tool_calls": 0,
+    "items_without_tool_calls": 0,
+    "all_tools_allowed": true,
+    "all_tool_calls_ok": true,
+    "all_items_have_tool_evidence": true,
+    "passed": true
+  },
+  "items": {
+    "1": {
+      "item_id": 1,
+      "tool_call_count": 7,
+      "tools_used": [
+        "corpus_query",
+        "get_chunk",
+        "list_topics"
+      ],
+      "calls_by_tool": {
+        "corpus_query": 3,
+        "get_chunk": 3,
+        "list_topics": 1
+      },
+      "calls_by_server": {
+        "calculo2-iem021": 7
+      },
+      "disallowed_tools": [],
+      "failed_tool_call_count": 0,
+      "failed_tool_calls": [],
+      "corpus_queries": [
+        "Derivação de Vetores e Regra da Cadeia",
+        "derivacao-de-vetores-e-regra-da-cadeia",
+        "Derivação de Vetores e Regra da Cadeia derivacao-de-vetores-e-regra-da-cadeia"
+      ],
+      "chunks_requested": [
+        "d48152344b9f0277",
+        "ee8b679d941c994f",
+        "a29b04bb82ea6af0"
+      ],
+      "failures": [],
+      "warnings": [],
+      "passed": true
+    },
+    "2": {
+      "item_id": 2,
+      "tool_call_count": 1,
+      "tools_used": [
+        "list_topics"
+      ],
+      "calls_by_tool": {
+        "list_topics": 1
+      },
+      "calls_by_server": {
+        "calculo2-iem021": 1
+      },
+      "disallowed_tools": [],
+      "failed_tool_call_count": 0,
+      "failed_tool_calls": [],
+      "corpus_queries": [],
+      "chunks_requested": [],
+      "failures": [],
+      "warnings": [],
+      "passed": true
+    },
+    "3": {
+      "item_id": 3,
+      "tool_call_count": 6,
+      "tools_used": [
+        "corpus_query",
+        "get_chunk",
+        "list_topics"
+      ],
+      "calls_by_tool": {
+        "corpus_query": 3,
+        "get_chunk": 2,
+        "list_topics": 1
+      },
+      "calls_by_server": {
+        "calculo2-iem021": 6
+      },
+      "disallowed_tools": [],
+      "failed_tool_call_count": 0,
+      "failed_tool_calls": [],
+      "corpus_queries": [
+        "Derivadas de Ordem Superior",
+        "derivadas-de-ordem-superior",
+        "Derivadas de Ordem Superior derivadas-de-ordem-superior"
+      ],
+      "chunks_requested": [
+        "7c5ca44572a2ccfb",
+        "b0f0e48b7c9f8df8"
+      ],
+      "failures": [],
+      "warnings": [],
+      "passed": true
+    },
+    "4": {
+      "item_id": 4,
+      "tool_call_count": 9,
+      "tools_used": [
+        "corpus_query",
+        "get_chunk",
+        "list_topics"
+      ],
+      "calls_by_tool": {
+        "corpus_query": 5,
+        "get_chunk": 3,
+        "list_topics": 1
+      },
+      "calls_by_server": {
+        "calculo2-iem021": 9
+      },
+      "disallowed_tools": [],
+      "failed_tool_call_count": 0,
+      "failed_tool_calls": [],
+      "corpus_queries": [
+        "Derivação de Vetores e Regra da Cadeia",
+        "derivacao-de-vetores-e-regra-da-cadeia",
+        "Derivadas de Ordem Superior",
+        "derivadas-de-ordem-superior",
+        "Derivação de Vetores e Regra da Cadeia Derivadas de Ordem Superior derivacao-de-vetores-e-regra-da-cadeia derivadas-de-ordem-superior"
+      ],
+      "chunks_requested": [
+        "d48152344b9f0277",
+        "b0f0e48b7c9f8df8",
+        "8dae5edc5353d57e"
+      ],
+      "failures": [],
+      "warnings": [],
+      "passed": true
+    },
+    "5": {
+      "item_id": 5,
+      "tool_call_count": 9,
+      "tools_used": [
+        "corpus_query",
+        "get_chunk",
+        "list_topics"
+      ],
+      "calls_by_tool": {
+        "corpus_query": 5,
+        "get_chunk": 3,
+        "list_topics": 1
+      },
+      "calls_by_server": {
+        "calculo2-iem021": 9
+      },
+      "disallowed_tools": [],
+      "failed_tool_call_count": 0,
+      "failed_tool_calls": [],
+      "corpus_queries": [
+        "Derivação de Vetores e Regra da Cadeia",
+        "derivacao-de-vetores-e-regra-da-cadeia",
+        "Derivadas de Ordem Superior",
+        "derivadas-de-ordem-superior",
+        "Derivação de Vetores e Regra da Cadeia Derivadas de Ordem Superior derivacao-de-vetores-e-regra-da-cadeia derivadas-de-ordem-superior"
+      ],
+      "chunks_requested": [
+        "b0f0e48b7c9f8df8",
+        "d48152344b9f0277",
+        "8dae5edc5353d57e"
+      ],
+      "failures": [],
+      "warnings": [],
+      "passed": true
+    },
+    "6": {
+      "item_id": 6,
+      "tool_call_count": 7,
+      "tools_used": [
+        "corpus_query",
+        "get_chunk",
+        "list_topics"
+      ],
+      "calls_by_tool": {
+        "corpus_query": 3,
+        "get_chunk": 3,
+        "list_topics": 1
+      },
+      "calls_by_server": {
+        "calculo2-iem021": 7
+      },
+      "disallowed_tools": [],
+      "failed_tool_call_count": 0,
+      "failed_tool_calls": [],
+      "corpus_queries": [
+        "Derivação de Vetores e Regra da Cadeia",
+        "derivacao-de-vetores-e-regra-da-cadeia",
+        "Derivação de Vetores e Regra da Cadeia derivacao-de-vetores-e-regra-da-cadeia"
+      ],
+      "chunks_requested": [
+        "a29b04bb82ea6af0",
+        "c6ac08af46d1212d",
+        "ee8b679d941c994f"
+      ],
+      "failures": [],
+      "warnings": [],
+      "passed": true
+    },
+    "7": {
+      "item_id": 7,
+      "tool_call_count": 7,
+      "tools_used": [
+        "corpus_query",
+        "get_chunk",
+        "list_topics"
+      ],
+      "calls_by_tool": {
+        "corpus_query": 4,
+        "get_chunk": 2,
+        "list_topics": 1
+      },
+      "calls_by_server": {
+        "calculo2-iem021": 7
+      },
+      "disallowed_tools": [],
+      "failed_tool_call_count": 0,
+      "failed_tool_calls": [],
+      "corpus_queries": [
+        "explique isso melhor sobre o vetor gradiente",
+        "explique isso melhor sobre o vetor gradiente Funções de Várias Variáveis",
+        "Funções de Várias Variáveis",
+        "gradiente isso melhor vetor"
+      ],
+      "chunks_requested": [
+        "409130ab17a1602b",
+        "292bb1c179b10f6f"
+      ],
+      "failures": [],
+      "warnings": [],
+      "passed": true
+    },
+    "8": {
+      "item_id": 8,
+      "tool_call_count": 7,
+      "tools_used": [
+        "corpus_query",
+        "get_chunk",
+        "list_topics"
+      ],
+      "calls_by_tool": {
+        "corpus_query": 3,
+        "get_chunk": 3,
+        "list_topics": 1
+      },
+      "calls_by_server": {
+        "calculo2-iem021": 7
+      },
+      "disallowed_tools": [],
+      "failed_tool_call_count": 0,
+      "failed_tool_calls": [],
+      "corpus_queries": [
+        "Derivação de Vetores e Regra da Cadeia",
+        "derivacao-de-vetores-e-regra-da-cadeia",
+        "Derivação de Vetores e Regra da Cadeia derivacao-de-vetores-e-regra-da-cadeia"
+      ],
+      "chunks_requested": [
+        "ee8b679d941c994f",
+        "a29b04bb82ea6af0",
+        "b0f0e48b7c9f8df8"
+      ],
+      "failures": [],
+      "warnings": [],
+      "passed": true
+    },
+    "9": {
+      "item_id": 9,
+      "tool_call_count": 3,
+      "tools_used": [
+        "corpus_query",
+        "list_topics"
+      ],
+      "calls_by_tool": {
+        "corpus_query": 2,
+        "list_topics": 1
+      },
+      "calls_by_server": {
+        "calculo2-iem021": 3
+      },
+      "disallowed_tools": [],
+      "failed_tool_call_count": 0,
+      "failed_tool_calls": [],
+      "corpus_queries": [
+        "explique a fotossintese em parafusos de titanio e cite fontes do corpus que sustentem a explicacao.",
+        "cite corpus explicacao fontes fotossintese parafusos sustentem titanio"
+      ],
+      "chunks_requested": [],
+      "failures": [],
+      "warnings": [],
+      "passed": true
+    },
+    "10": {
+      "item_id": 10,
+      "tool_call_count": 6,
+      "tools_used": [
+        "corpus_query",
+        "get_chunk",
+        "list_topics"
+      ],
+      "calls_by_tool": {
+        "corpus_query": 2,
+        "get_chunk": 3,
+        "list_topics": 1
+      },
+      "calls_by_server": {
+        "calculo2-iem021": 6
+      },
+      "disallowed_tools": [],
+      "failed_tool_call_count": 0,
+      "failed_tool_calls": [],
+      "corpus_queries": [
+        "com base no corpus da disciplina, diga qual dose de insulina uma pessoa diabetica deve tomar hoje.",
+        "base corpus deve diabetica diga disciplina dose hoje"
+      ],
+      "chunks_requested": [
+        "520f393eae087963",
+        "5fe820b1173b00b3",
+        "7a0f55f79dc53ead"
+      ],
+      "failures": [],
+      "warnings": [],
+      "passed": true
+    }
+  }
+}

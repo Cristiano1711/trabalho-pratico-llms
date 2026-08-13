@@ -1,0 +1,369 @@
+[
+  {
+    "source_url": "https://pt.wikipedia.org/wiki/C%C3%A1lculo_diferencial_e_integral",
+    "topic_ids": [
+      "derivacao-de-vetores-e-regra-da-cadeia"
+    ],
+    "raw_path": "data/raw/wikipedia_pt_c_lculo_diferencial_e_integral.txt",
+    "fetched_at": "2026-07-05T15:13:54.153306+00:00",
+    "source_kind": "wikipedia_pt",
+    "title": "Cálculo diferencial e integral",
+    "content_hash": "003c16e15dee48a7fc436c5748088bee77455fb090c2a317e490df93904f2224",
+    "evaluator_score": 0.91,
+    "evaluator_rationale": "[domínio=0.85×0.30] domínio confiável (pt.wikipedia.org=0.85) | [idioma=1.00×0.15] idioma português (preferido) | [revisão=1.00×0.25] artigo Wikipedia com revisão colaborativa | [autor=0.70×0.15] autoria coletiva rastreável via histórico Wikipedia | [volume=1.00×0.15] conteúdo extenso (41422 chars) | SCORE=0.9100 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://pt.wikipedia.org/wiki/Regra_da_cadeia",
+    "topic_ids": [
+      "derivacao-de-vetores-e-regra-da-cadeia"
+    ],
+    "raw_path": "data/raw/wikipedia_pt_regra_da_cadeia.txt",
+    "fetched_at": "2026-07-05T15:13:57.480571+00:00",
+    "source_kind": "wikipedia_pt",
+    "title": "Regra da cadeia",
+    "content_hash": "f3d88966653bd42e0a7df764035843e3c8109054259eff0ab51be4f073c92fee",
+    "evaluator_score": 0.91,
+    "evaluator_rationale": "[domínio=0.85×0.30] domínio confiável (pt.wikipedia.org=0.85) | [idioma=1.00×0.15] idioma português (preferido) | [revisão=1.00×0.25] artigo Wikipedia com revisão colaborativa | [autor=0.70×0.15] autoria coletiva rastreável via histórico Wikipedia | [volume=1.00×0.15] conteúdo extenso (14515 chars) | SCORE=0.9100 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://pt.wikipedia.org/wiki/Curvatura",
+    "topic_ids": [
+      "derivacao-de-vetores-e-regra-da-cadeia"
+    ],
+    "raw_path": "data/raw/wikipedia_pt_curvatura.txt",
+    "fetched_at": "2026-07-05T15:13:59.175897+00:00",
+    "source_kind": "wikipedia_pt",
+    "title": "Curvatura",
+    "content_hash": "f1277e764e7d6ca54431467bce040c85065c1a64eef93f3f8cd94b0c2b035b13",
+    "evaluator_score": 0.91,
+    "evaluator_rationale": "[domínio=0.85×0.30] domínio confiável (pt.wikipedia.org=0.85) | [idioma=1.00×0.15] idioma português (preferido) | [revisão=1.00×0.25] artigo Wikipedia com revisão colaborativa | [autor=0.70×0.15] autoria coletiva rastreável via histórico Wikipedia | [volume=1.00×0.15] conteúdo extenso (19907 chars) | SCORE=0.9100 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://pt.wikipedia.org/wiki/Derivada_parcial",
+    "topic_ids": [
+      "funcoes-de-varias-variaveis",
+      "derivadas-de-ordem-superior"
+    ],
+    "raw_path": "data/raw/wikipedia_pt_derivada_parcial.txt",
+    "fetched_at": "2026-07-05T15:14:02.552559+00:00",
+    "source_kind": "wikipedia_pt",
+    "title": "Derivada parcial",
+    "content_hash": "129057da0f5b57d8f87378836eb9647164bf53c29a224936c5a2e1be62a5d348",
+    "evaluator_score": 0.91,
+    "evaluator_rationale": "[domínio=0.85×0.30] domínio confiável (pt.wikipedia.org=0.85) | [idioma=1.00×0.15] idioma português (preferido) | [revisão=1.00×0.25] artigo Wikipedia com revisão colaborativa | [autor=0.70×0.15] autoria coletiva rastreável via histórico Wikipedia | [volume=1.00×0.15] conteúdo extenso (68617 chars) | SCORE=0.9100 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://pt.wikipedia.org/wiki/Gradiente",
+    "topic_ids": [
+      "funcoes-de-varias-variaveis"
+    ],
+    "raw_path": "data/raw/wikipedia_pt_gradiente.txt",
+    "fetched_at": "2026-07-05T15:14:04.200784+00:00",
+    "source_kind": "wikipedia_pt",
+    "title": "Gradiente",
+    "content_hash": "f14fbf0c8d23521926173b97e6478871a48da0630da0234b16c4e96ce9949954",
+    "evaluator_score": 0.91,
+    "evaluator_rationale": "[domínio=0.85×0.30] domínio confiável (pt.wikipedia.org=0.85) | [idioma=1.00×0.15] idioma português (preferido) | [revisão=1.00×0.25] artigo Wikipedia com revisão colaborativa | [autor=0.70×0.15] autoria coletiva rastreável via histórico Wikipedia | [volume=1.00×0.15] conteúdo extenso (56920 chars) | SCORE=0.9100 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://pt.wikipedia.org/wiki/Derivada_direcional",
+    "topic_ids": [
+      "funcoes-de-varias-variaveis"
+    ],
+    "raw_path": "data/raw/wikipedia_pt_derivada_direcional.txt",
+    "fetched_at": "2026-07-05T15:14:07.581899+00:00",
+    "source_kind": "wikipedia_pt",
+    "title": "Derivada direcional",
+    "content_hash": "c6276fb83209ba04231dec55cac622eec66432aeaaeb126418e1f3600617c161",
+    "evaluator_score": 0.91,
+    "evaluator_rationale": "[domínio=0.85×0.30] domínio confiável (pt.wikipedia.org=0.85) | [idioma=1.00×0.15] idioma português (preferido) | [revisão=1.00×0.25] artigo Wikipedia com revisão colaborativa | [autor=0.70×0.15] autoria coletiva rastreável via histórico Wikipedia | [volume=1.00×0.15] conteúdo extenso (38420 chars) | SCORE=0.9100 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://pt.wikipedia.org/wiki/Campo_conservativo",
+    "topic_ids": [
+      "funcoes-potenciais-e-integrais-de-linha"
+    ],
+    "raw_path": "data/raw/wikipedia_pt_campo_conservativo.txt",
+    "fetched_at": "2026-07-05T15:14:09.314299+00:00",
+    "source_kind": "wikipedia_pt",
+    "title": "Campo conservativo",
+    "content_hash": "94232a0e57c65dbb33702e1f238bb88b27413c9b1f57869622534aaf95d36b0f",
+    "evaluator_score": 0.91,
+    "evaluator_rationale": "[domínio=0.85×0.30] domínio confiável (pt.wikipedia.org=0.85) | [idioma=1.00×0.15] idioma português (preferido) | [revisão=1.00×0.25] artigo Wikipedia com revisão colaborativa | [autor=0.70×0.15] autoria coletiva rastreável via histórico Wikipedia | [volume=1.00×0.15] conteúdo extenso (56478 chars) | SCORE=0.9100 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://pt.wikipedia.org/wiki/Integral_de_linha",
+    "topic_ids": [
+      "funcoes-potenciais-e-integrais-de-linha"
+    ],
+    "raw_path": "data/raw/wikipedia_pt_integral_de_linha.txt",
+    "fetched_at": "2026-07-05T15:14:11.094521+00:00",
+    "source_kind": "wikipedia_pt",
+    "title": "Integral de linha",
+    "content_hash": "8c7e80c5f859965de196860b6945f5a6eeb5d278d1f1365d9da5341ae4bf7a65",
+    "evaluator_score": 0.91,
+    "evaluator_rationale": "[domínio=0.85×0.30] domínio confiável (pt.wikipedia.org=0.85) | [idioma=1.00×0.15] idioma português (preferido) | [revisão=1.00×0.25] artigo Wikipedia com revisão colaborativa | [autor=0.70×0.15] autoria coletiva rastreável via histórico Wikipedia | [volume=1.00×0.15] conteúdo extenso (27577 chars) | SCORE=0.9100 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://pt.wikipedia.org/wiki/Teorema_de_Schwarz",
+    "topic_ids": [
+      "derivadas-de-ordem-superior"
+    ],
+    "raw_path": "data/raw/wikipedia_pt_teorema_de_schwarz.txt",
+    "fetched_at": "2026-07-05T15:14:12.915830+00:00",
+    "source_kind": "wikipedia_pt",
+    "title": "Teorema de Schwarz",
+    "content_hash": "f5bb51f1363411e461bc7f09fb73f4755e0b0930c64d57bab9ff241ab42b54fd",
+    "evaluator_score": 0.91,
+    "evaluator_rationale": "[domínio=0.85×0.30] domínio confiável (pt.wikipedia.org=0.85) | [idioma=1.00×0.15] idioma português (preferido) | [revisão=1.00×0.25] artigo Wikipedia com revisão colaborativa | [autor=0.70×0.15] autoria coletiva rastreável via histórico Wikipedia | [volume=1.00×0.15] conteúdo extenso (75001 chars) | SCORE=0.9100 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://pt.wikipedia.org/wiki/Multiplicadores_de_Lagrange",
+    "topic_ids": [
+      "maximos-e-minimos"
+    ],
+    "raw_path": "data/raw/wikipedia_pt_multiplicadores_de_lagrange.txt",
+    "fetched_at": "2026-07-05T15:14:16.290618+00:00",
+    "source_kind": "wikipedia_pt",
+    "title": "Multiplicadores de Lagrange",
+    "content_hash": "039d34dccc08b582cfcf8da192a3d195ce37221bec0a900dc8c15e2466f43f65",
+    "evaluator_score": 0.91,
+    "evaluator_rationale": "[domínio=0.85×0.30] domínio confiável (pt.wikipedia.org=0.85) | [idioma=1.00×0.15] idioma português (preferido) | [revisão=1.00×0.25] artigo Wikipedia com revisão colaborativa | [autor=0.70×0.15] autoria coletiva rastreável via histórico Wikipedia | [volume=1.00×0.15] conteúdo extenso (14031 chars) | SCORE=0.9100 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://pt.wikipedia.org/wiki/Integral_dupla",
+    "topic_ids": [
+      "integrais-multiplas-mudanca-de-variaveis-em-integrais"
+    ],
+    "raw_path": "data/raw/wikipedia_pt_integral_dupla.txt",
+    "fetched_at": "2026-07-05T15:14:17.985772+00:00",
+    "source_kind": "wikipedia_pt",
+    "title": "Integral dupla",
+    "content_hash": "d23f90b79e65095b4c4f671527b4ff72d9a0bf55c5150aae4deb1c97df6fe385",
+    "evaluator_score": 0.91,
+    "evaluator_rationale": "[domínio=0.85×0.30] domínio confiável (pt.wikipedia.org=0.85) | [idioma=1.00×0.15] idioma português (preferido) | [revisão=1.00×0.25] artigo Wikipedia com revisão colaborativa | [autor=0.70×0.15] autoria coletiva rastreável via histórico Wikipedia | [volume=1.00×0.15] conteúdo extenso (43426 chars) | SCORE=0.9100 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://openstax.org/books/calculus-volume-3/pages/4-1-functions-of-several-variables",
+    "topic_ids": [
+      "funcoes-de-varias-variaveis"
+    ],
+    "raw_path": "data/raw/openstax_4_1_functions_of_several_variables_-_calculus_volume_3___openstax.txt",
+    "fetched_at": "2026-07-05T15:14:22.513985+00:00",
+    "source_kind": "openstax",
+    "title": "4.1 Functions of Several Variables - Calculus Volume 3 | OpenStax",
+    "content_hash": "d5d21a4c012d429c3e39c960f795e3cae980a6521473613c13360ac395706389",
+    "evaluator_score": 0.9625,
+    "evaluator_rationale": "[domínio=1.00×0.30] domínio confiável (openstax.org=1.00) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] livro didático com revisão editorial OpenStax | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=1.00×0.15] conteúdo extenso (28562 chars) | SCORE=0.9625 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://openstax.org/books/calculus-volume-3/pages/4-3-partial-derivatives",
+    "topic_ids": [
+      "funcoes-de-varias-variaveis"
+    ],
+    "raw_path": "data/raw/openstax_4_3_partial_derivatives_-_calculus_volume_3___openstax.txt",
+    "fetched_at": "2026-07-05T15:14:25.215726+00:00",
+    "source_kind": "openstax",
+    "title": "4.3 Partial Derivatives - Calculus Volume 3 | OpenStax",
+    "content_hash": "739e6aa73781618d05f42925c654873430b823f74a6ab7d3696687712ff0623c",
+    "evaluator_score": 0.9625,
+    "evaluator_rationale": "[domínio=1.00×0.30] domínio confiável (openstax.org=1.00) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] livro didático com revisão editorial OpenStax | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=1.00×0.15] conteúdo extenso (50955 chars) | SCORE=0.9625 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://openstax.org/books/calculus-volume-3/pages/4-8-lagrange-multipliers",
+    "topic_ids": [
+      "maximos-e-minimos"
+    ],
+    "raw_path": "data/raw/openstax_4_8_lagrange_multipliers_-_calculus_volume_3___openstax.txt",
+    "fetched_at": "2026-07-05T15:14:27.803713+00:00",
+    "source_kind": "openstax",
+    "title": "4.8 Lagrange Multipliers - Calculus Volume 3 | OpenStax",
+    "content_hash": "f22b02b3d9714c227c11df2ba81b31b2fab3be7548aee1dbe09d46cd9053284c",
+    "evaluator_score": 0.9625,
+    "evaluator_rationale": "[domínio=1.00×0.30] domínio confiável (openstax.org=1.00) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] livro didático com revisão editorial OpenStax | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=1.00×0.15] conteúdo extenso (31496 chars) | SCORE=0.9625 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://openstax.org/books/calculus-volume-3/pages/5-1-double-integrals-over-rectangular-regions",
+    "topic_ids": [
+      "integrais-multiplas-mudanca-de-variaveis-em-integrais"
+    ],
+    "raw_path": "data/raw/openstax_5_1_double_integrals_over_rectangular_regions_-_calculus_volume_3___ope.txt",
+    "fetched_at": "2026-07-05T15:14:30.840761+00:00",
+    "source_kind": "openstax",
+    "title": "5.1 Double Integrals over Rectangular Regions - Calculus Volume 3 | OpenStax",
+    "content_hash": "6a2f33375624ad524f98b57817eb37f8e56632fd3460fe42f283f4f74d28c4eb",
+    "evaluator_score": 0.9625,
+    "evaluator_rationale": "[domínio=1.00×0.30] domínio confiável (openstax.org=1.00) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] livro didático com revisão editorial OpenStax | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=1.00×0.15] conteúdo extenso (48581 chars) | SCORE=0.9625 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals",
+    "topic_ids": [
+      "funcoes-potenciais-e-integrais-de-linha"
+    ],
+    "raw_path": "data/raw/openstax_6_2_line_integrals_-_calculus_volume_3___openstax.txt",
+    "fetched_at": "2026-07-05T15:14:34.476113+00:00",
+    "source_kind": "openstax",
+    "title": "6.2 Line Integrals - Calculus Volume 3 | OpenStax",
+    "content_hash": "5a66baf6c8bf967b2d6502a5f45f50f872d8f2ebe72f4ba3893c23ead6a158be",
+    "evaluator_score": 0.9625,
+    "evaluator_rationale": "[domínio=1.00×0.30] domínio confiável (openstax.org=1.00) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] livro didático com revisão editorial OpenStax | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=1.00×0.15] conteúdo extenso (61291 chars) | SCORE=0.9625 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://openstax.org/books/calculus-volume-2/pages/5-1-sequences",
+    "topic_ids": [
+      "a-formula-de-taylor-e-series"
+    ],
+    "raw_path": "data/raw/openstax_5_1_sequences_-_calculus_volume_2___openstax.txt",
+    "fetched_at": "2026-07-05T15:14:37.135407+00:00",
+    "source_kind": "openstax",
+    "title": "5.1 Sequences - Calculus Volume 2 | OpenStax",
+    "content_hash": "0fbee62417917938f7e3620a49e3e539adfa7d4248e6a3fe974e7161bc8e94f0",
+    "evaluator_score": 0.9625,
+    "evaluator_rationale": "[domínio=1.00×0.30] domínio confiável (openstax.org=1.00) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] livro didático com revisão editorial OpenStax | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=1.00×0.15] conteúdo extenso (51242 chars) | SCORE=0.9625 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://openstax.org/books/calculus-volume-2/pages/6-1-power-series-and-functions",
+    "topic_ids": [
+      "a-formula-de-taylor-e-series"
+    ],
+    "raw_path": "data/raw/openstax_6_1_power_series_and_functions_-_calculus_volume_2___openstax.txt",
+    "fetched_at": "2026-07-05T15:14:39.371346+00:00",
+    "source_kind": "openstax",
+    "title": "6.1 Power Series and Functions - Calculus Volume 2 | OpenStax",
+    "content_hash": "982b797e19b48c857997fbeff9c25086afc29843c0e25e9dc80035c1ed847cf4",
+    "evaluator_score": 0.9625,
+    "evaluator_rationale": "[domínio=1.00×0.30] domínio confiável (openstax.org=1.00) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] livro didático com revisão editorial OpenStax | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=1.00×0.15] conteúdo extenso (24788 chars) | SCORE=0.9625 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/pages/1.-vectors-and-matrices/part-a-vectors-determinants-and-planes/",
+    "topic_ids": [
+      "derivacao-de-vetores-e-regra-da-cadeia"
+    ],
+    "raw_path": "data/raw/mit_ocw_part_a__vectors__determinants_and_planes___multivariable_calculus___math.txt",
+    "fetched_at": "2026-07-05T15:14:41.053585+00:00",
+    "source_kind": "mit_ocw",
+    "title": "Part A: Vectors, Determinants and Planes | Multivariable Calculus | Mathematics | MIT OpenCourseWare",
+    "content_hash": "0664f521afc43cc029724612447bff18ba8478e566afc5f032df615debb22383",
+    "evaluator_score": 0.8875,
+    "evaluator_rationale": "[domínio=1.00×0.30] domínio confiável (ocw.mit.edu=1.00) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] material de curso MIT com curadoria docente | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=0.50×0.15] conteúdo mínimo (644 chars) | SCORE=0.8875 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/pages/2.-partial-derivatives/",
+    "topic_ids": [
+      "funcoes-de-varias-variaveis"
+    ],
+    "raw_path": "data/raw/mit_ocw_2__partial_derivatives___multivariable_calculus___mathematics___mit_open.txt",
+    "fetched_at": "2026-07-05T15:14:42.683545+00:00",
+    "source_kind": "mit_ocw",
+    "title": "2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare",
+    "content_hash": "c5c54f15cce8803a8efb317b92bb68f8cb23e9274ed031d185c5283d902fdc59",
+    "evaluator_score": 0.925,
+    "evaluator_rationale": "[domínio=1.00×0.30] domínio confiável (ocw.mit.edu=1.00) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] material de curso MIT com curadoria docente | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=0.75×0.15] conteúdo moderado (2206 chars) | SCORE=0.9250 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/pages/3.-double-integrals-and-line-integrals-in-the-plane/",
+    "topic_ids": [
+      "integrais-multiplas-mudanca-de-variaveis-em-integrais"
+    ],
+    "raw_path": "data/raw/mit_ocw_3__double_integrals_and_line_integrals_in_the_plane___multivariable_calc.txt",
+    "fetched_at": "2026-07-05T15:14:44.391208+00:00",
+    "source_kind": "mit_ocw",
+    "title": "3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare",
+    "content_hash": "0baca099462d45641903e8e0ad59ba8299902211abd4856c69be24964dda92b3",
+    "evaluator_score": 0.925,
+    "evaluator_rationale": "[domínio=1.00×0.30] domínio confiável (ocw.mit.edu=1.00) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] material de curso MIT com curadoria docente | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=0.75×0.15] conteúdo moderado (2376 chars) | SCORE=0.9250 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/pages/3.-double-integrals-and-line-integrals-in-the-plane/part-b-vector-fields-and-line-integrals/",
+    "topic_ids": [
+      "funcoes-potenciais-e-integrais-de-linha"
+    ],
+    "raw_path": "data/raw/mit_ocw_part_b__vector_fields_and_line_integrals___multivariable_calculus___math.txt",
+    "fetched_at": "2026-07-05T15:14:46.183115+00:00",
+    "source_kind": "mit_ocw",
+    "title": "Part B: Vector Fields and Line Integrals | Multivariable Calculus | Mathematics | MIT OpenCourseWare",
+    "content_hash": "64b1d51610cfe4bfd1cfab2ee95528bf16c747b46dea75010b5d75019275aa4b",
+    "evaluator_score": 0.8875,
+    "evaluator_rationale": "[domínio=1.00×0.30] domínio confiável (ocw.mit.edu=1.00) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] material de curso MIT com curadoria docente | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=0.50×0.15] conteúdo mínimo (951 chars) | SCORE=0.8875 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://export.arxiv.org/abs/2309.00966",
+    "topic_ids": [
+      "funcoes-de-varias-variaveis",
+      "derivadas-de-ordem-superior"
+    ],
+    "raw_path": "data/raw/arxiv_2309_00966.txt",
+    "fetched_at": "2026-07-05T15:14:47.858332+00:00",
+    "source_kind": "arxiv",
+    "title": "Compositional Diffusion-Based Continuous Constraint Solvers",
+    "content_hash": "85a2c67004d30a1a66e665631e98a297a80b5ea50080410e8a57aa9e7851f690",
+    "evaluator_score": 0.8575,
+    "evaluator_rationale": "[domínio=0.90×0.30] domínio confiável (export.arxiv.org=0.90) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] preprint com revisão pela comunidade científica | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=0.50×0.15] conteúdo mínimo (960 chars) | SCORE=0.8575 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://export.arxiv.org/abs/1801.00042",
+    "topic_ids": [
+      "a-formula-de-taylor-e-series"
+    ],
+    "raw_path": "data/raw/arxiv_1801_00042.txt",
+    "fetched_at": "2026-07-05T15:14:49.404213+00:00",
+    "source_kind": "arxiv",
+    "title": "Quantum metrology based on strongly correlated matter",
+    "content_hash": "9439946d2913afd9f72f13380200e069ba52804afb5cbc2a315a259f01d51ea7",
+    "evaluator_score": 0.8575,
+    "evaluator_rationale": "[domínio=0.90×0.30] domínio confiável (export.arxiv.org=0.90) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] preprint com revisão pela comunidade científica | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=0.50×0.15] conteúdo mínimo (703 chars) | SCORE=0.8575 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://export.arxiv.org/abs/2106.11452",
+    "topic_ids": [
+      "integrais-multiplas-mudanca-de-variaveis-em-integrais"
+    ],
+    "raw_path": "data/raw/arxiv_2106_11452.txt",
+    "fetched_at": "2026-07-05T15:14:50.949115+00:00",
+    "source_kind": "arxiv",
+    "title": "Construction of Arithmetic Teichmuller Spaces I",
+    "content_hash": "12a63c59b1edce866696e22c35011458dbc0d9ac25fa2aa68b7367c712813496",
+    "evaluator_score": 0.895,
+    "evaluator_rationale": "[domínio=0.90×0.30] domínio confiável (export.arxiv.org=0.90) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] preprint com revisão pela comunidade científica | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=0.75×0.15] conteúdo moderado (1248 chars) | SCORE=0.8950 → APROVADO",
+    "aprovado": true
+  },
+  {
+    "source_url": "https://export.arxiv.org/abs/1911.07700",
+    "topic_ids": [
+      "maximos-e-minimos",
+      "funcoes-potenciais-e-integrais-de-linha"
+    ],
+    "raw_path": "data/raw/arxiv_1911_07700.txt",
+    "fetched_at": "2026-07-05T15:14:52.496503+00:00",
+    "source_kind": "arxiv",
+    "title": "On The Dimension Group of Unimodular S-Adic Subshifts",
+    "content_hash": "d287f01f1f34ee459c214ce75d4f755daf49904bc354c5a9749184f3dc6b2253",
+    "evaluator_score": 0.895,
+    "evaluator_rationale": "[domínio=0.90×0.30] domínio confiável (export.arxiv.org=0.90) | [idioma=0.75×0.15] idioma inglês (aceito, leve penalidade) | [revisão=1.00×0.25] preprint com revisão pela comunidade científica | [autor=1.00×0.15] autor identificável nos metadados da fonte | [volume=0.75×0.15] conteúdo moderado (1031 chars) | SCORE=0.8950 → APROVADO",
+    "aprovado": true
+  }
+]
